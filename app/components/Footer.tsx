@@ -7,20 +7,20 @@ export default function Footer() {
   return (
     <div className='max-w-[1640px] text-white mx-auto'>
       <div className='bg-[#532D00]'>
-        <div className=' max-w-[1400px] mx-auto py-10 px-3 md:px-0'>
+        <div className=' max-w-[1400px] mx-auto py-10 px-3 xl:px-0'>
           <div className='flex justify-between item-center'>
             <div className='flex gap-1 items-center'>
               <div className='border border-white rounded-lg'>
                 <Image src='/Logo.png' width={50} height={50} alt=''/>
               </div>
               
-              <div className='uppercase font-extrabold'>
-                <h1 className=' text-xl'>Happy</h1>
-                <p className=' text-lg'>Hamster20</p>
+              <div className='uppercase'>
+                <h1 className=' text-2xl font-extrabold'>Happy</h1>
+                <p className=''>Hamster20</p>
               </div>
             </div>
 
-            <div className='uppercase md:flex gap-3 items-center hidden'>
+            <div className='uppercase lg:flex gap-3 items-center hidden'>
               <div><a href="">about us</a></div>
               <div><a href="">mission</a></div>
               <div><a href="">roadmap</a></div>
@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className='uppercase flex justify-between items-center md:hidden mt-5 text-sm flex-wrap'>
+          <div className='uppercase flex justify-between md:justify-center gap-0 md:gap-10 items-center lg:hidden mt-5 text-sm flex-wrap'>
             <div><a href="">about us</a></div>
             <div><a href="">mission</a></div>
             <div><a href="">roadmap</a></div>
@@ -52,7 +52,7 @@ export default function Footer() {
       </div>
 
       <div className='bg-[#341C00]'>
-        <div className='max-w-[1400px] mx-auto py-3 px-3 md:px-0 flex flex-col md:flex-row justify-between items-center'>
+        <div className='max-w-[1400px] mx-auto py-3 px-3 xl:px-0 flex flex-col md:flex-row justify-between items-center'>
           <p>2024 by HappyHamster</p>
           <p>All rights reserved</p>
         </div>
