@@ -20,7 +20,7 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className='flex-1 mt-8 md:mt-0 md:ml-16'>
-                        <div className=' rounded-lg p-8 '>
+                        <div className=' rounded-lg md:p-8 '>
                             <div className='text-center bg-white py-3 rounded-md border-2 border-brown  text-brown mb-8'>
                                 <div className='text-4xl font-extrabold'>88:88:88:88</div>
                                 <div className='text-sm'>Days &nbsp; Hours &nbsp; Minutes &nbsp; Seconds</div>

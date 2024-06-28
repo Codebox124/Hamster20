@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutUs() {
     return (
-        <div className='py-20 md:px-20 px-4'>
+        <div className='py-20 md:px-20 px-2'>
             <div className='justify-center flex'>
                 <button className='bg-brown px-6 rounded-xl py-2 text-white'>About</button>
             </div>
@@ -10,7 +10,7 @@ export default function AboutUs() {
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
                     <div className=''>
                         <div>
-                            <h1 className='text-3xl md:text-5xl font-extrabold'>HAPPYHAMSTER20?</h1>
+                            <h1 className='text-lg md:text-5xl font-extrabold'>HAPPYHAMSTER20?</h1>
                         </div>
                         <div className='mt-4'>
                             <span className='text-xs md:text-sm flex flex-col font-montserrat gap-4 md:gap-7'>
@@ -20,7 +20,7 @@ export default function AboutUs() {
                             </span>
                         </div>
                         <div className='mt-6'>
-                            <button className='px-6 md:px-9 py-3 text-brown rounded-full bg-white'>Get the Whitepaper</button>
+                            <button className='px-6 md:px-9 py-3 text-brown rounded-full text-sm bg-white'>Get the Whitepaper</button>
                         </div>
                     </div>
                     <div className='flex justify-center md:justify-end'>
