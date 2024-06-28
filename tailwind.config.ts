@@ -8,14 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
       colors: {
-          brown: '#5B3202', 
-          yellow: '#FFFF91', 
-          orange: '#FFA500', 
-          blue: '#1E90FF' ,
-          green: '#008082'
-
+        brown: '#5B3202',
+        yellow: '#FFFF91',
+        orange: '#FFA500',
+        blue: '#1E90FF',
+        green: '#008082',
+      },
+      screens: {
+        xlg: '1200px',
       },
     },
   },
