@@ -16,7 +16,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className='flex justify-between items-center p-4'>
+        <div className='flex justify-between items-center md:p-4 p-2'>
             <div className='flex gap-2 items-center'>
                 <img className='w-14 h-14' src='/hamster image 4.png' alt="Hamster" />
                 <div className='flex flex-col p-0 m-0 text-brown'>
