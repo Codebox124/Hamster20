@@ -29,6 +29,17 @@ export default function AboutUs() {
                 </div>
             </div>
 
+            <div className='bg-brown rounded-xl p-6 md:p-10 text-white mt-16'>
+                <div className='text-center'>
+                    <h1 className='text-4xl font-bold mb-2'>WATCH THE VIDEO BELOW</h1>
+                    <span>Check out this video to understand more about HappyHamster20</span>
+                </div>
+                <div className='h-[500px] bg-yellow mt-3 rounded-xl'>
+
+                </div>
+            </div>
+
+
 
 
         </div>
