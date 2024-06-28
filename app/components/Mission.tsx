@@ -11,7 +11,7 @@ export default function Mission() {
           </div>
 
           <div className='text-center my-8 p-5 xl:p-0'>
-            <p className=' leading-9'>
+            <p className=' leading-9 font-montserrat'>
               Welcome to HappyHamster20, where happiness meets crypto! Our mission is simple: to spread joy and positivity through innovative rewards and impactful initiatives. Join us on this exciting journey as we transform the world of cryptocurrency, one happy moment at a time.
             </p>
           </div>
@@ -25,7 +25,7 @@ export default function Mission() {
               <div className='text-white text-center w-auto md:w-[50%] lg:w-auto'>
                 <p className='uppercase text-2xl my-4'>financial freedom</p>
 
-                <p className='text-xs font-thin leading-7 my-4'>
+                <p className='text-xs font-thin font-montserrat leading-7 my-4'>
                   Achieve financial freedom with our monthly rewards! Earn $1,500 every month for 12 months. Be a part of HappyHamster20 and enjoy the peace of mind that comes with consistent financial support.
                 </p>
               </div>
@@ -39,7 +39,7 @@ export default function Mission() {
               <div className='text-white text-center w-auto md:w-[50%] lg:w-auto'>
                 <p className='uppercase text-2xl my-4'>tesla reward</p>
 
-                <p className='text-xs font-thin leading-7 my-4'>
+                <p className='text-xs font-thin leading-7 font-montserrat my-4'>
                   Invest early and drive away in style! All presale investors are automatically entered to win a Tesla Model S. Don’t miss out on this electrifying opportunity—join our presale now!
                 </p>
               </div>
@@ -53,7 +53,7 @@ export default function Mission() {
               <div className='text-white text-center w-auto md:w-[50%] lg:w-auto'>
                 <p className='uppercase text-2xl my-4'>CHARITY PROJECT</p>
 
-                <p className='text-xs font-thin leading-7 my-4'>
+                <p className='text-xs font-thin leading-7 font-montserrat my-4'>
                   Making a difference together! We’re donating $100,000 to impactful charity projects. Join us in spreading happiness and support to those in need. Your investment in HappyHamster20 helps create a brighter future for everyone.
                 </p>
               </div>
