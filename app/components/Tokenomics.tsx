@@ -8,7 +8,7 @@ export default function Tokenomics() {
       <section className='bg-white max-w-[1640px] mx-auto'>
         <div className='max-w-[1370px] mx-auto'>
           <div className='flex justify-center'>
-            <button className=' bg-[#FFA500] p-2 rounded-md'>
+            <button className=' bg-[#FFA500] px-6 rounded-xl py-2 text-white'>
               Tokenomics
             </button>
           </div>
@@ -66,7 +66,7 @@ export default function Tokenomics() {
                   xxxxxxxxxxxxxxxxxxxx...
                 </div>
 
-                <div className='text-white uppercase overflow-hidden w-full'>
+                <div className='text-white uppercase overflow-hidden w-full block md:hidden'>
                   xxxxxxxxx...
                 </div>
 

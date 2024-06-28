@@ -10,7 +10,7 @@ export default function AboutUs() {
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
                     <div className=''>
                         <div>
-                            <h1 className='text-3xl md:text-5xl font-extrabold'>HAPPYHAMSTER20?</h1>
+                            <h1 className='text-xl md:text-5xl font-extrabold'>HAPPYHAMSTER20?</h1>
                         </div>
                         <div className='mt-4'>
                             <span className='text-xs md:text-sm flex flex-col font-montserrat gap-4 md:gap-7'>

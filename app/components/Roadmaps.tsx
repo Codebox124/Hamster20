@@ -5,7 +5,7 @@ export default function Roadmaps() {
     <div className=' bg-yellow max-w-[1640px] mx-auto my-10'>
       <div className=' max-w-[1370px] mx-auto pt-14 md:pt-20 lg:pt-36 pb-14'>
         <div className='flex justify-center'>
-          <button className=' bg-[#995505] p-2 rounded-md'>
+          <button className=' bg-[#995505] py-2 px-6 text-white rounded-md'>
             Roadmap
           </button>
         </div>
