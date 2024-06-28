@@ -31,12 +31,16 @@ export default function Navbar() {
                 <a href="#" onClick={closeMenu}>TOKENOMICS</a>
             </div>
             <div className='hidden md:flex gap-4 items-center'>
-                <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
-                    <FaXTwitter color='white' size={24} />
-                </div>
-                <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
-                    <FaTelegramPlane color='white' size={24} />
-                </div>
+                <a className='' href="">
+                    <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
+                        <FaXTwitter color='white' size={24} />
+                    </div>
+                </a>
+                <a href="">
+                    <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
+                        <FaTelegramPlane color='white' size={24} />
+                    </div>
+                </a>
             </div>
             <div className='md:hidden flex items-center'>
                 <button onClick={toggleMenu}>
@@ -53,12 +57,16 @@ export default function Navbar() {
                     <a href="#" className='py-2 text-brown text-sm' onClick={closeMenu}>ROADMAP</a>
                     <a href="#" className='py-2 text-brown text-sm' onClick={closeMenu}>TOKENOMICS</a>
                     <div className='flex gap-4 items-center py-4'>
-                        <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
-                            <FaXTwitter color='white' size={24} />
-                        </div>
-                        <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
-                            <FaTelegramPlane color='white' size={24} />
-                        </div>
+                        <a className='' href="">
+                            <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
+                                <FaXTwitter color='white' size={24} />
+                            </div>
+                        </a>
+                        <a href="">
+                            <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
+                                <FaTelegramPlane color='white' size={24} />
+                            </div>
+                        </a>
                     </div>
                 </div>
             )}
