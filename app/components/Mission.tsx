@@ -3,7 +3,7 @@ import React from 'react'
 export default function Mission() {
   return (
     <div className='bg-white max-w-[1640px] mx-auto'>
-      <div className='max-w-[1370px] mx-auto py-16'>
+      <div className='max-w-[1370px] mx-auto md:py-16 '>
           <div className='flex justify-center my-5'>
             <button className=' bg-[#008082] px-6 rounded-md py-2 text-white'>
               Mission
