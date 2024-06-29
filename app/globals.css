@@ -24,3 +24,28 @@
 body {
   font-family: 'Monument', sans-serif;
 }
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-text-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-text {
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
