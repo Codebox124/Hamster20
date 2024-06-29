@@ -31,9 +31,9 @@ export default function Hero() {
 
     return (
         <div>
-            <div className='bg-yellow py-4 px-4 lg:px-16'>
+            <div className='bg-yellow py-4 px-4 lg:px-10'>
                 <Navbar />
-                <div className='flex items-center flex-col md:flex-row mt-16'>
+                <div className='grid lg:grid-cols-2 items-center flex-col md:flex-row mt-16'>
                     <div className='text-brown flex-1'>
                         <div className='heroth'>
                             <span className='block text-center md:text-left  hero_text'>GUESS WHO HAS BEEN WAITING FOR YOU?</span>
@@ -46,7 +46,7 @@ export default function Hero() {
                             <img className='h-auto w-full md:w-[860px]' src="/heroImg.png" alt="Hero Image" />
                         </div>
                     </div>
-                    <div className='flex-1 mt-8 md:mt-0 md:ml-16 hidden'>
+                    <div className='flex-1 mt-8 md:mt-0 md:ml-16 '>
                         <div className=' rounded-lg md:p-8 '>
                             <div className='text-center bg-white py-3 rounded-md border-2 border-brown  text-brown mb-8 img'>
                                 <div className='text-4xl font-extrabold'>88:88:88:88</div>

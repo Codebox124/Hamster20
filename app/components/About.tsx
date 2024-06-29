@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutUs() {
     useEffect(() => {
-        const animateElement = (selector, animation) => {
+        const animateElement = (selector: string, animation: { from: any, to: any }) => {
             gsap.fromTo(selector, 
                 { ...animation.from }, 
                 { ...animation.to, 
@@ -27,12 +27,12 @@ export default function AboutUs() {
         });
 
         animateElement('.happy_a', {
-            from: { scale: 0.5, opacity: 0.7, },
+            from: { scale: 0.5, opacity: 0.7 },
             to: { scale: 1, opacity: 1, duration: 1, ease: 'power2.inOut' }
         });
 
         animateElement('.video_a', {
-            from: { scale: 0.5, opacity: 0.7, },
+            from: { scale: 0.5, opacity: 0.7 },
             to: { scale: 1, opacity: 1, duration: 1, ease: 'power2.inOut' }
         });
     }, []);
