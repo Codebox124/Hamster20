@@ -94,9 +94,22 @@ export default function Hero() {
                 </div>
 
             </div>
-            <div className='bg-blue py-6'>
+            <div className='bg-blue md:py-6 py-3'>
+                
+                    <ScrollingText />
             
+            </div>
+        </div>
+    );
+}
 
+function ScrollingText() {
+    return (
+        <div className="scrolling-text-container">
+            <div className="scrolling-text flex gap-3 items-center">
+                <span className='text-white text-4xl md:text-7xl'>HAPPY HAMSTER</span>
+                <img className='w-14 h-14' src='/hamster image 4.png' alt="Hamster" />
+                <span className='text-white text-4xl md:text-7xl'>HAPPY HAMSTER</span>
             </div>
         </div>
     );
