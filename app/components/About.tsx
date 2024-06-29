@@ -43,10 +43,10 @@ export default function AboutUs() {
                 <button className='bg-brown px-6 rounded-xl py-2 text-white about_a'>About</button>
             </div>
             <div className='bg-gradient-to-b from-brown to-orange rounded-xl p-6 md:p-10 text-white mt-16 happy_a'>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
+                <div className='grid  lg:grid-cols-2 gap-6 md:gap-10'>
                     <div>
                         <div>
-                            <h1 className='text-lg md:text-5xl font-extrabold'>HAPPYHAMSTER20?</h1>
+                            <h1 className='md:text-2xl xl:text-5xl font-extrabold'>HAPPYHAMSTER20?</h1>
                         </div>
                         <div className='mt-4'>
                             <span className='text-xs md:text-sm flex flex-col font-montserrat gap-4 md:gap-7'>
