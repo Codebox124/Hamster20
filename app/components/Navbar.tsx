@@ -36,7 +36,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className='flex justify-between items-center p-4 para'>
+        <div className='flex justify-between items-center md:p-4 para'>
             <div className='flex gap-2 items-center'>
                 <img className='w-14 h-14' src='/hamster image 4.png' alt="Hamster" />
                 <div className='flex flex-col p-0 m-0 text-brown'>
@@ -68,7 +68,7 @@ export default function Navbar() {
                 </button>
             </div>
             {isOpen && (
-                <div className='absolute top-0 left-0 w-full bg-white shadow-md flex flex-col items-center md:hidden'>
+                <div className='absolute top-0 left-0 w-full bg-white shadow-md flex  flex-col items-center md:hidden'>
                     <button onClick={closeMenu} className='self-end p-4'>
                         <FaTimes size={24} />
                     </button>
