@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
 
           <div className='pt-8 text-center'>
-            <p className=' font-light text-sm leading-5 md:leading-9 font-montserrat'>The information on the HappyHamster20 website is for informational purposes only and does not constitute financial investments, or legal advice. Cryptocurrency  investments involve a high degree of risk, including the potential loss of your entire investment. Always conduct your own research and consult witha a qualified financial advisor before making any investment decisions.</p>
+            <p className=' font-light text-lg leading-5 md:leading-9 font-montserrat'>The information on the HappyHamster20 website is for informational purposes only and does not constitute financial investments, or legal advice. Cryptocurrency  investments involve a high degree of risk, including the potential loss of your entire investment. Always conduct your own research and consult witha a qualified financial advisor before making any investment decisions.</p>
           </div>
         </div>
       </div>
