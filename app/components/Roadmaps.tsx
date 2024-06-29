@@ -38,7 +38,7 @@ export default function Roadmaps() {
     roads.forEach((road) => {
       gsap.fromTo(road, 
         { opacity: 0, y: 20 }, 
-        { opacity: 1, y: 0, duration: 1, ease: 'elastic.out(3, 0.6)', 
+        { opacity: 1, y: 0, duration: 1.5, ease: 'elastic.out(3, 0.6)', 
           scrollTrigger: {
             trigger: road,
             start: 'top 70%',
@@ -52,7 +52,7 @@ export default function Roadmaps() {
   }, []);
 
   return (
-    <div className=' bg-yellow max-w-[1640px] mx-auto my-10'>
+    <div className=' bg-yellow  mx-auto my-10'>
       <div className=' max-w-[1370px] mx-auto pt-14 md:pt-20 lg:pt-36 pb-14'>
         <div className='flex justify-center road_but'>
           <button className=' bg-[#995505] py-2 px-6 text-white rounded-md'>

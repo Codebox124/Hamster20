@@ -187,7 +187,7 @@ export default function Tokenomics() {
         </div>
       </section>
 
-      <section className='bg-[#E1E1E1] max-w-[1640px] mx-auto py-10 md:py-28'>
+      <section className='bg-[#E1E1E1]  mx-auto py-10 md:py-28'>
         <div className='max-w-[1360px] mx-auto flex items-center justify-between relative'>
           <div className='md:flex flex-col justify-between h-full hidden'>
             <div className='mb-auto absolute -top-[90px] xlg:-top-[70px] left-[10px] xlg:left-[70px] xl:left-11 aimg'>
