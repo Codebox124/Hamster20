@@ -1,29 +1,26 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 export default function Navbar() {
-    
-    useGSAP(() => {
+    useEffect(() => {
         gsap.to('#text', {
             ease: 'power1.Out',
-            opacity: 1, 
+            opacity: 1,
             y: 0,
-        })
-    
+        });
+
         gsap.fromTo('.para', {
-            opacity: 0, 
+            opacity: 0,
             y: -80,
         }, {
             opacity: 1,
             y: 0,
-        })
-        }, [])
-
+        });
+    }, []);
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -36,7 +33,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className='flex justify-between items-center md:p-4 para'>
+        <div className='relative z-50 flex justify-between items-center md:p-4 para'>
             <div className='flex gap-2 items-center'>
                 <img className='w-14 h-14' src='/hamster image 4.png' alt="Hamster" />
                 <div className='flex flex-col p-0 m-0 text-brown'>
@@ -51,7 +48,7 @@ export default function Navbar() {
                 <a href="#" onClick={closeMenu}>TOKENOMICS</a>
             </div>
             <div className='hidden md:flex gap-4 items-center'>
-                <a className='' href="">
+                <a href="">
                     <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
                         <FaXTwitter color='white' size={24} />
                     </div>
@@ -68,7 +65,7 @@ export default function Navbar() {
                 </button>
             </div>
             {isOpen && (
-                <div className='absolute top-0 left-0 w-full bg-white shadow-md flex  flex-col items-center md:hidden'>
+                <div className='absolute top-0 left-0 w-full bg-white shadow-md flex flex-col items-center md:hidden z-50'>
                     <button onClick={closeMenu} className='self-end p-4'>
                         <FaTimes size={24} />
                     </button>
@@ -77,7 +74,7 @@ export default function Navbar() {
                     <a href="#" className='py-2 text-brown text-sm' onClick={closeMenu}>ROADMAP</a>
                     <a href="#" className='py-2 text-brown text-sm' onClick={closeMenu}>TOKENOMICS</a>
                     <div className='flex gap-4 items-center py-4'>
-                        <a className='' href="">
+                        <a href="">
                             <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
                                 <FaXTwitter color='white' size={24} />
                             </div>
