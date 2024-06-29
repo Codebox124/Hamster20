@@ -4,10 +4,10 @@ import Navbar from './Navbar';
 export default function Hero() {
     return (
         <div>
-            <div className='bg-yellow py-4 px-4 md:px-16'>
+            <div className='bg-yellow py-4 px-4 lg:px-16'>
                 <Navbar />
-                <div className='flex items-center flex-col md:flex-row mt-16'>
-                    <div className='text-brown flex-1'>
+                <div className='grid lg:grid-cols-2  items-center flex-col lg:flex-row mt-16'>
+                    <div className='text-brown '>
                         <div>
                             <span className='block text-center md:text-left'>GUESS WHO HAS BEEN WAITING FOR YOU?</span>
                             <div className='flex flex-col p-0 m-0 font-extrabold text-center md:text-left'>
@@ -15,11 +15,11 @@ export default function Hero() {
                                 <span className='-mt-3 text-4xl md:text-7xl'>HAMSTER</span>
                             </div>
                         </div>
-                        <div className='z-40 -mt-8 md:-mt-16'>
-                            <img className='h-auto w-full md:w-[860px]' src="/heroImg.png" alt="Hero Image" />
+                        <div className='z-40 flex items-center justify-center -mt-8 md:-mt-16'>
+                            <img className='  md:w-[860px]' src="/heroImg.png" alt="Hero Image" />
                         </div>
                     </div>
-                    <div className='flex-1 mt-8 md:mt-0 md:ml-16'>
+                    <div className=' mt-8 md:mt-0 md:ml-16'>
                         <div className=' rounded-lg md:p-8 '>
                             <div className='text-center bg-white py-3 rounded-md border-2 border-brown  text-brown mb-8'>
                                 <div className='text-4xl font-extrabold'>88:88:88:88</div>
