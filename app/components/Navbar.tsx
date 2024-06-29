@@ -3,8 +3,28 @@ import React, { useState } from 'react';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function Navbar() {
+    
+    useGSAP(() => {
+        gsap.to('#text', {
+            ease: 'power1.Out',
+            opacity: 1, 
+            y: 0,
+        })
+    
+        gsap.fromTo('.para', {
+            opacity: 0, 
+            y: -80,
+        }, {
+            opacity: 1,
+            y: 0,
+        })
+        }, [])
+
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -16,7 +36,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className='flex justify-between items-center p-4'>
+        <div className='flex justify-between items-center p-4 para'>
             <div className='flex gap-2 items-center'>
                 <img className='w-14 h-14' src='/hamster image 4.png' alt="Hamster" />
                 <div className='flex flex-col p-0 m-0 text-brown'>
@@ -42,7 +62,7 @@ export default function Navbar() {
                     </div>
                 </a>
             </div>
-            <div className='md:hidden flex items-center'>
+            <div className='md:hidden flex items-center para'>
                 <button onClick={toggleMenu}>
                     {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
                 </button>
