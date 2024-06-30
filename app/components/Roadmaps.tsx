@@ -55,19 +55,19 @@ export default function Roadmaps() {
     <div className=' bg-yellow  mx-auto my-10'>
       <div className=' max-w-[1370px] mx-auto pt-14 md:pt-20 lg:pt-36 pb-14'>
         <div className='flex justify-center road_but'>
-          <button className=' bg-[#995505] py-2 px-6 text-white rounded-md'>
+          <button className=' bg-green py-2 px-6 mb-[80px] text-white rounded-md'>
             Roadmap
           </button>
         </div>
 
-        <div className='text-[#2B1700] text-center text-3xl md:text-7xl font-extrabold my-6 road_ham'>
+        <div className='text-[#2B1700] text-center mb-[119px] text-3xl md:text-7xl font-extrabold  road_ham'>
           {Array.from('HAMSTERMAP').map((letter, index) => (
             <span key={index}>{letter}</span>
           ))}
         </div>
 
-        <section className='p-5 xl:p-0'>
-          <div className=' py-5 md:y-8 flex flex-col-reverse md:flex-row text-lg  justify-normal md:justify-between border-t-2 border-black text-[#2B1700] items-start md:items-center road_a'>
+        <section className='p-5  xl:p-0'>
+          <div className=' py-5 md:py-8 flex flex-col-reverse md:flex-row text-lg  justify-normal md:justify-between border-t-2 border-black text-[#2B1700] items-start md:items-center road_a'>
             <div className=' w-full md:w-[50%] xl:w-[40%] font-light  text-left'>
               <p className='font-montserrat font-light'>HappyHamster20 launches the presale. Early investors get a preferential price. The team uses part of the proceeds for a professional marketing strategy.</p>
             </div>

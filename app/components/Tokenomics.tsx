@@ -111,7 +111,7 @@ export default function Tokenomics() {
       <section className='bg-white max-w-[1640px] mx-auto'>
         <div className='max-w-[1370px] mx-auto'>
           <div className='flex justify-center tok_but'>
-            <button className=' bg-[#FFA500] px-6 rounded-xl py-2 text-white'>
+            <button className=' bg-green px-6 rounded-xl py-2 text-white'>
               Tokenomics
             </button>
           </div>
