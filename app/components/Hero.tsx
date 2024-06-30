@@ -52,7 +52,7 @@ export default function Hero() {
                         </motion.div>
                     </div>
                     <motion.div variants={fadeIn('up', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once: true, amount: 0.6 }} className='flex-1 mt-8 md:mt-0 '>
-                        <div className='relative rounded-lg md:p-8'>
+                        <div className='relative rounded-lg md:p-4'>
                             <div className='absolute inset-0 bg-gradient-to-r rounded-full blur-xl from-transparent via-[#f9a7037b] to-transparent opacity-50 gradient-overlay '></div>
 
                             <div className='relative z-10 text-center bg-yellow py-3 rounded-md border-2 border-brown text-brown mb-8 img'>
