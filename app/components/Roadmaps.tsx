@@ -60,7 +60,7 @@ export default function Roadmaps() {
           </button>
         </div>
 
-        <div className='text-[#2B1700] text-center mb-[119px] text-3xl md:text-7xl font-extrabold  road_ham'>
+        <div className='text-[#2B1700] text-center mb-6 md:mb-[119px] text-3xl md:text-7xl font-extrabold  road_ham'>
           {Array.from('HAMSTERMAP').map((letter, index) => (
             <span key={index}>{letter}</span>
           ))}
