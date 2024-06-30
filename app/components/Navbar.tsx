@@ -61,7 +61,7 @@ export default function Navbar() {
             </div>
             <div className='md:hidden flex items-center para'>
                 <button onClick={toggleMenu}>
-                    {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                    {isOpen ? <FaTimes size={24} /> : <FaBars color='white' size={24} />}
                 </button>
             </div>
             {isOpen && (
