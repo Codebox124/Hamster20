@@ -59,7 +59,7 @@ export default function AboutUs() {
                             <button className='px-6 md:px-9 py-4 text-white rounded-xl text-sm bg-green '>Get the Whitepaper</button>
                         </div>
                     </div>
-                    <div className='flex justify-center md:justify-end'>
+                    <div className='flex justify-center lg:justify-end'>
                         <img className='h-auto w-full md:w-[400px] border-4 rounded-xl border-green' src="/Frame 1.png" alt="Hamster" />
                     </div>
                 </div>
