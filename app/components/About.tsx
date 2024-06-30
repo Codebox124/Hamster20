@@ -42,7 +42,7 @@ export default function AboutUs() {
             <div className='justify-center flex'>
                 <button className='bg-green px-6 rounded-xl py-2 text-white about_a'>About</button>
             </div>
-            <div className=' rounded-xl p-6  md:p-10  mt-16 happy_a'>
+            <div className=' rounded-xl px-4 mt-10  md:mt-16 happy_a'>
                 <div className='grid items-center  lg:grid-cols-2 gap-6 md:gap-10'>
                     <div>
                         <div>
