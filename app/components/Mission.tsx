@@ -28,7 +28,7 @@ export default function Mission() {
           </motion.p>
         </motion.div>
 
-        <motion.div variants={fadeIn('down', 0.3)} initial='hidden' whileInView={"show"} viewport={{ once: false, amount: 0.6 }} className='grid grid-cols-1 lg:grid-cols-3 gap-9 my-5 p-5 xl:p-0'>
+        <motion.div  viewport={{ once: false, amount: 0.6 }} className='grid grid-cols-1 lg:grid-cols-3 gap-9 my-5 p-5 xl:p-0'>
           <div className='from-[#FF3E02] to-[#F96A03] bg-gradient-to-r p-5 rounded-3xl col-span-1 block md:flex lg:block justify-between items-center gap-5 card_a'>
             <div className='w-auto md:w-[50%] lg:w-auto'>
               <img src="/Rectangle_uno.png" alt="financial freedom" />
