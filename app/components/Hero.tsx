@@ -94,7 +94,7 @@ export default function Hero() {
                 </div>
 
             </div>
-            <div className='bg-blue md:py-6 py-3'>
+            <div className='bg-blue md:py-6 py-3 md:-mt-20'>
                 
                     <ScrollingText />
             
