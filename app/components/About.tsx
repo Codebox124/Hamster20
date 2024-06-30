@@ -21,7 +21,7 @@ export default function AboutUs() {
                 <button className='bg-gradient-to-r from-[#FF3E02] to-[#F9A503] px-6 rounded-xl py-2 text-white about_a'>About</button>
 
             </div>
-            <motion.div variants={fadeIn('up', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once: false, amount: 0.6 }} className=' rounded-xl px-4 mt-10  md:mt-16 happy_a'>
+            <motion.div variants={fadeIn('up', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once: true, amount: 0.6 }} className=' rounded-xl px-4 mt-10  md:mt-16 happy_a'>
 
 
                 <div className='grid items-center  lg:grid-cols-2 gap-6 md:gap-10'>
@@ -46,7 +46,7 @@ export default function AboutUs() {
                 </div>
             </motion.div>
 
-            <motion.div variants={fadeIn('up', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once: false, amount: 0.6 }} className=' rounded-xl p-6 md:p-10 text-yellow md:mt-[242px] mt-16 video_a'>
+            <motion.div variants={fadeIn('up', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once: true, amount: 0.6 }} className=' rounded-xl p-6 md:p-10 text-yellow md:mt-[242px] mt-16 video_a'>
                 <div className='absolute inset-0 flex justify-center items-center'>
                     <div className='w-[600px] h-[600px] bg-gradient-radial from-[#FF3E02] via-[#F9A503] to-transparent rounded-full opacity-50'></div>
                 </div>

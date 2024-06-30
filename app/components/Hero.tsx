@@ -16,20 +16,20 @@ export default function Hero() {
                 <div className='grid lg:grid-cols-2 items-center flex-col md:flex-row mt-16'>
                     <div className='text-yellow flex-1'>
                         <div className='heroth'>
-                            <motion.span variants={fadeIn('down', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once: false, amount: 0.6 }} className='block text-center md:text-left hero_text'>GUESS WHO HAS BEEN WAITING FOR YOU?</motion.span>
-                            <motion.div variants={fadeIn('down', 0.8)} initial= 'hidden' whileInView={"show"} viewport={{once:false, amount:0.6}} className='flex flex-col p-0 m-0 font-extrabold text-center md:text-left'>
+                            <motion.span variants={fadeIn('down', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once:true, amount: 0.6 }} className='block text-center md:text-left hero_text'>GUESS WHO HAS BEEN WAITING FOR YOU?</motion.span>
+                            <motion.div variants={fadeIn('down', 0.8)} initial= 'hidden' whileInView={"show"} viewport={{once:true, amount:0.6}} className='flex flex-col p-0 m-0 font-extrabold text-center md:text-left'>
                                 <span className='font-extrabold text-6xl md:text-9xl pl-0 md:pl-24 hero_text'>HAPPY</span>
                                 <span className='-mt-3 text-4xl md:text-7xl hero_text'>HAMSTER</span>
 
                             </motion.div>
                         </div>
 
-                        <motion.div variants={fadeIn('up', 0.5)} initial= '' whileInView={"show"} viewport={{once:false, amount: 0.6}}  className='z-40 -mt-8 md:-mt-16 img relative'>
+                        <motion.div variants={fadeIn('up', 0.5)} initial= '' whileInView={"show"} viewport={{once:true, amount: 0.6}}  className='z-40 -mt-8 md:-mt-16 img relative'>
                             <img className='h-auto w-full md:w-[860px]' src="/heroImg.png" alt="Hero Image" />
 
                         </motion.div>
                     </div>
-                    <motion.div variants={fadeIn('up', 0.2)} initial= 'hidden' whileInView={"show"} viewport={{once:false, amount: 0.6}} className='flex-1 mt-8 md:mt-0 md:ml-16'>
+                    <motion.div variants={fadeIn('up', 0.2)} initial= 'hidden' whileInView={"show"} viewport={{once:true, amount: 0.6}} className='flex-1 mt-8 md:mt-0 md:ml-16'>
                         <div className='rounded-lg md:p-8'>
                             <div className='absolute inset-0 bg-gradient-to-r rounded-full blur-xl from-transparent via-[#f9a7037b] to-transparent opacity-50 gradient-overlay '></div>
 

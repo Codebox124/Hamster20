@@ -66,8 +66,8 @@ export default function Roadmaps() {
 
         <section className='p-5  xl:p-0'>
           <div className=' py-5 md:py-8 flex flex-col-reverse md:flex-row text-lg  justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_a'>
-            <div className=' w-full md:w-[50%] xl:w-[40%] font-light  text-left'>
-              <p className='font-montserrat font-light'>HappyHamster20 launches the presale. Early investors get a preferential price. The team uses part of the proceeds for a professional marketing strategy.</p>
+            <div className=' w-full md:w-[50%] xl:w-[40%] font-extralight  text-left'>
+              <p className='font-montserrat font-extralight'>HappyHamster20 launches the presale. Early investors get a preferential price. The team uses part of the proceeds for a professional marketing strategy.</p>
             </div>
 
             <div className=' w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
@@ -77,8 +77,8 @@ export default function Roadmaps() {
           </div>
 
           <div className=' py-5 md:py-8 flex flex-col-reverse md:flex-row text-lg  justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_b'>
-            <div className='w-full md:w-[50%] xl:w-[40%] font-light  text-left'>
-              <p className='font-montserrat font-light'>Investors have the opportunity to acquire tokens during the presale. After the successful launch, one of the presale investors will receive a Tesla Model S as a prize.</p>
+            <div className='w-full md:w-[50%] xl:w-[40%] font-extralight  text-left'>
+              <p className='font-montserrat font-extralight'>Investors have the opportunity to acquire tokens during the presale. After the successful launch, one of the presale investors will receive a Tesla Model S as a prize.</p>
             </div>
 
             <div className='w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
@@ -88,8 +88,8 @@ export default function Roadmaps() {
           </div>
 
           <div className=' py-5 md:y-8 flex flex-col-reverse md:flex-row text-lg  justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_c'>
-            <div className=' w-full md:w-[50%] xl:w-[40%] font-light text-left'>
-              <p className='font-montserrat font-light'>
+            <div className=' w-full md:w-[50%] xl:w-[40%] font-extralight text-left'>
+              <p className='font-montserrat font-extralight'>
                 To ensure a fair start of HappyHamster20, presale investors can claim their tokens on the website simultaneously with the exchange listing.
               </p>
             </div>
@@ -101,8 +101,8 @@ export default function Roadmaps() {
           </div>
 
           <div className=' py-5 md:y-8 flex flex-col-reverse md:flex-row text-lg  justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_d'>
-            <div className=' w-full md:w-[50%] xl:w-[40%] font-light  text-left'>
-              <p className='font-montserrat font-light'>HappyHamster20 will be launched on PancakeSwap, one of the most popular decentralized exchanges. This provides the best trading environment and early liquidity.</p>
+            <div className=' w-full md:w-[50%] xl:w-[40%] font-extralight  text-left'>
+              <p className='font-montserrat font-extralight'>HappyHamster20 will be launched on PancakeSwap, one of the most popular decentralized exchanges. This provides the best trading environment and early liquidity.</p>
             </div>
 
             <div className=' w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
@@ -112,8 +112,8 @@ export default function Roadmaps() {
           </div>
 
           <div className=' py-5 md:y-8 flex flex-col-reverse md:flex-row text-lg  justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_e'>
-            <div className=' w-full md:w-[50%] xl:w-[40%] font-light text-left'>
-              <p className='font-montserrat font-light'>The HappyHamster20 team will provide a substantial liquidity pool on PancakeSwap. To this end, 10% of the total token supply has been set aside.</p>
+            <div className=' w-full md:w-[50%] xl:w-[40%] font-extralight text-left'>
+              <p className='font-montserrat font-extralight'>The HappyHamster20 team will provide a substantial liquidity pool on PancakeSwap. To this end, 10% of the total token supply has been set aside.</p>
             </div>
 
             <div className=' w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
@@ -123,8 +123,8 @@ export default function Roadmaps() {
           </div>
 
           <div className=' py-5 md:y-8 flex flex-col-reverse md:flex-row text-lg  justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_f'>
-            <div className=' w-full md:w-[50%] xl:w-[40%] font-light  text-left'>
-              <p className='font-montserrat font-light'>The HappyHamster20 team plans to distribute airdrops to the community irregularly in the future.</p>
+            <div className=' w-full md:w-[50%] xl:w-[40%] font-extralight  text-left'>
+              <p className='font-montserrat font-extralight'>The HappyHamster20 team plans to distribute airdrops to the community irregularly in the future.</p>
             </div>
 
             <div className=' w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
