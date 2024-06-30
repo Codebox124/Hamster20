@@ -111,14 +111,14 @@ export default function Tokenomics() {
       <section className='bg-white max-w-[1640px] mx-auto'>
         <div className='max-w-[1370px] mx-auto'>
           <div className='flex justify-center tok_but'>
-            <button className=' bg-green px-6 rounded-xl py-2 text-white'>
+            <button className=' bg-green px-6 mt-4 rounded-xl py-2 text-white'>
               Tokenomics
             </button>
           </div>
 
-          <div className='p-3 xl:p-0 grid grid-cols-6 lg:col-span-7 items-center'>
+          <div className='p-3  xl:p-0 grid grid-cols-6 lg:col-span-7 items-center'>
             <div className='lg:col-span-4 col-span-4 w-fit'>
-              <div className='grid grid-rows-1 md:grid-cols-2 my-8 lg:my-16 gap-3 items-center md:items-start md:gap-5 lg:gap-8 w-fit'>
+              <div className='grid grid-rows-1 md:grid-cols-2 my-8 lg:my-16 gap-5 items-center md:items-start md:gap-14  w-fit'>
                 <div className=' col-span-1 tok_a'>
                   <p className='  font-normal md:font-extrabold text-lg uppercase'>Circulation</p>
                   <p>200 Billion HPH</p>
