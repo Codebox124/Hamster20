@@ -12,6 +12,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Mission() {
 
+    
+
 
   return (
     <div className=' max-w-[1640px] md:mb-[179px] mb-10 mt-10 md:mt-[215px] mx-auto'>
