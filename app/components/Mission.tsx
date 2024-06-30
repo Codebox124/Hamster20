@@ -2,62 +2,16 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { motion, easeInOut } from 'framer-motion'
+
+import { fadeIn } from "../../varients"
+import { once } from "events"
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Mission() {
-  useEffect(() => {
-    
-    gsap.fromTo('.mission_a', 
-      { y: 20, opacity: 0 }, 
-      { y: 0, opacity: 1, duration: 1, 
-        scrollTrigger: {
-          trigger: '.mission_a',
-          start: 'top 80%',
-          end: 'top 50%',
-          scrub: true
-        }
-      }
-    );
 
-    gsap.fromTo('.text_a', 
-      { opacity: 0, y: 20 }, 
-      { opacity: 1, y: 0, duration: 1, 
-        scrollTrigger: {
-          trigger: '.text_a',
-          start: 'top 80%',
-          end: 'top 50%',
-          scrub: true
-        }
-      }
-    );
-
-    
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.card_a',
-        start: 'top 50%',
-        end: 'top 20%',
-        scrub: true,
-      }
-    });
-
-    
-    tl.fromTo('.card_a', 
-      { opacity: 0, y: -80 }, 
-      { opacity: 1, y: 0, duration: 1, ease: 'elastic.out' }
-    )
-    .fromTo('.card_b', 
-      { opacity: 0, y: -80 }, 
-      { opacity: 1, y: 0, duration: 1, ease: 'elastic.out' }, 
-      "-=0.03" 
-    )
-    .fromTo('.card_c', 
-      { opacity: 0, y: -80 }, 
-      { opacity: 1, y: 0, duration: 1, ease: 'elastic.out' }, 
-      "-=0.03" 
-    );
-  }, []);
 
   return (
     <div className=' max-w-[1640px] md:mb-[179px] mb-10 mt-10 md:mt-[215px] mx-auto'>
@@ -68,13 +22,13 @@ export default function Mission() {
           </button>
         </div>
 
-        <div className='text-center mb-[60px] p-5 xl:p-0 text-yellow'>
-          <p className=' md:text-[20px] text-[12px] font-light'>
+        <motion.div variants={fadeIn('up', 0.2)} initial= 'hidden' whileInView={"show"} viewport={{once:false, amount: 0.6}} className='text-center mb-[60px] p-5 xl:p-0 text-yellow'>
+          <motion.p  variants={fadeIn('down', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once: false, amount: 0.6 }} className=' md:text-[20px] text-[12px] font-light'>
             <span className='text_a'>Welcome to HappyHamster20, where happiness meets crypto! Our mission is simple:</span> <span className='text_a'>to spread joy and positivity through innovative rewards and impactful initiatives.</span> <span className='text_a'>Join us on this exciting journey as we transform the world of cryptocurrency, one happy moment at a time.</span>
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-9 my-5 p-5 xl:p-0'>
+        <motion.div variants={fadeIn('down', 0.3)} initial='hidden' whileInView={"show"} viewport={{ once: false, amount: 0.6 }} className='grid grid-cols-1 lg:grid-cols-3 gap-9 my-5 p-5 xl:p-0'>
           <div className='from-[#FF3E02] to-[#F96A03] bg-gradient-to-r p-5 rounded-3xl col-span-1 block md:flex lg:block justify-between items-center gap-5 card_a'>
             <div className='w-auto md:w-[50%] lg:w-auto'>
               <img src="/Rectangle_uno.png" alt="financial freedom" />
@@ -116,7 +70,7 @@ export default function Mission() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
