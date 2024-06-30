@@ -5,25 +5,23 @@ import { motion } from 'framer-motion';
 import { fadeIn } from "../../varients";
 
 export default function Hero() {
-    const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    const [timeLeft, setTimeLeft] = useState<{ days: number, hours: number, minutes: number, seconds: number }>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
     useEffect(() => {
-        const targetDate = new Date('2024-12-31T23:59:59'); // Set your target date here
+        const targetDate = new Date('2024-12-31T23:59:59');
 
         const interval = setInterval(() => {
             const now = new Date();
-            const difference = targetDate - now;
+            const difference = targetDate.getTime() - now.getTime();
 
-            const timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / 1000 / 60) % 60),
-                seconds: Math.floor((difference / 1000) % 60),
-            };
-
-            setTimeLeft(timeLeft);
-
-            if (difference < 0) {
+            if (difference >= 0) {
+                setTimeLeft({
+                    days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                    minutes: Math.floor((difference / 1000 / 60) % 60),
+                    seconds: Math.floor((difference / 1000) % 60),
+                });
+            } else {
                 clearInterval(interval);
             }
         }, 1000);
@@ -31,7 +29,7 @@ export default function Hero() {
         return () => clearInterval(interval);
     }, []);
 
-    const formatTime = (time) => String(time).padStart(2, '0');
+    const formatTime = (time: number) => String(time).padStart(2, '0');
 
     return (
         <div>
