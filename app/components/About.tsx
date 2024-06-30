@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutUs() {
     return (
-        <div className='relative pt-[120px] md:px-20 px-2'>
+        <div className='relative pt-[120px] lg:px-20  px-2'>
             <div className='justify-center flex'>
                 <button className='bg-gradient-to-r from-[#FF3E02] to-[#F9A503] px-6 rounded-xl py-2 text-white about_a'>About</button>
             </div>
@@ -20,7 +20,7 @@ export default function AboutUs() {
                 viewport={{ once: true, amount: 0.6 }} 
                 className='rounded-xl px-4 mt-10 md:mt-16 happy_a'
             >
-                <div className='grid items-center lg:grid-cols-2 gap-6 md:gap-10'>
+                <div className='grid items-center sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
                     <div className='text-yellow'>
                         <div>
                             <h1 className='text-2xl md:text-4xl xl:text-5xl font-extrabold'>HAPPYHAMSTER20?</h1>
