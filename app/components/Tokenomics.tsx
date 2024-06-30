@@ -124,35 +124,35 @@ export default function Tokenomics() {
                                     <p>200 Billion HPH</p>
                                 </div>
                                 <div className='flex gap-2 items-center col-span-1 tok_b'>
-                                    <div className='p-7 bg-[#32CD32] rounded-md'></div>
+                                    <div className='p-7 from-[#FF3E02] to-[#F9A503] bg-gradient-to-r rounded-md'></div>
                                     <div>
                                         <p className=' font-normal md:font-extrabold text-base md:text-lg'>15%</p>
                                         <p className='font-thin text-sm md:text-base'>Airdrop Capital</p>
                                     </div>
                                 </div>
                                 <div className='flex gap-2 items-center col-span-1 tok_c'>
-                                    <div className='p-7 bg-[#1E90FF] rounded-md'></div>
+                                    <div className='p-7 from-[#FF3E02] to-[#F9A503] bg-gradient-to-r rounded-md'></div>
                                     <div>
                                         <p className=' font-normal md:font-extrabold text-base md:text-lg'>25%</p>
                                         <p className='font-thin text-sm md:text-base'>Presale Reserve</p>
                                     </div>
                                 </div>
                                 <div className='flex gap-2 items-center col-span-1 tok_d'>
-                                    <div className='p-7 bg-[#FF69B4] rounded-md'></div>
+                                    <div className='p-7 from-[#FF3E02] to-[#F9A503] bg-gradient-to-r rounded-md'></div>
                                     <div>
                                         <p className=' font-normal md:font-extrabold text-base md:text-lg'>30%</p>
                                         <p className='font-thin text-sm md:text-base'>Future Treasure</p>
                                     </div>
                                 </div>
                                 <div className='flex gap-2 items-center col-span-1 tok_e'>
-                                    <div className='p-7 bg-[#00CED1] rounded-md'></div>
+                                    <div className='p-7 from-[#FF3E02] to-[#F9A503] bg-gradient-to-r rounded-md'></div>
                                     <div>
                                         <p className=' font-normal md:font-extrabold text-base md:text-lg'>20%</p>
                                         <p className='font-thin text-sm md:text-base'>Marketing Reserve</p>
                                     </div>
                                 </div>
                                 <div className='flex gap-2 items-center col-span-1 tok_f'>
-                                    <div className='p-7 bg-[#FFA500] rounded-md'></div>
+                                    <div className='p-7 from-[#FF3E02] to-[#F9A503] bg-gradient-to-r rounded-md'></div>
                                     <div>
                                         <p className=' font-normal md:font-extrabold text-base md:text-lg'>10%</p>
                                         <p className='font-thin text-sm md:text-base'>Liquidity</p>
