@@ -67,7 +67,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className='flex justify-center lg:justify-end'>
-                        <img className='h-auto w-full md:w-[400px] border-4 rounded-xl border-green' src="/Frame 1.png" alt="Hamster" />
+                        <img className='h-auto w-full md:w-[400px] border-4 rounded-3xl border-yellow' src="/Frame 1 (1).png" alt="Hamster" />
                     </div>
                 </div>
             </div>
