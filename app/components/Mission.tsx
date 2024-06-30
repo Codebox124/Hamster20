@@ -60,22 +60,22 @@ export default function Mission() {
   }, []);
 
   return (
-    <div className='bg-white max-w-[1640px] md:mb-[179px] mb-10 mt-10 md:mt-[215px] mx-auto'>
+    <div className=' max-w-[1640px] md:mb-[179px] mb-10 mt-10 md:mt-[215px] mx-auto'>
       <div className='max-w-[1370px] mx-auto '>
         <div className='flex justify-center mb-6 md:mb-[60px] mission_a'>
-          <button className=' bg-[#008082] px-6 rounded-md py-2 text-white'>
+          <button className=' bg-orange px-6 rounded-md py-2 text-white'>
             Mission
           </button>
         </div>
 
-        <div className='text-center mb-[60px] p-5 xl:p-0'>
+        <div className='text-center mb-[60px] p-5 xl:p-0 text-yellow'>
           <p className=' md:text-[20px] text-[12px] font-light'>
             <span className='text_a'>Welcome to HappyHamster20, where happiness meets crypto! Our mission is simple:</span> <span className='text_a'>to spread joy and positivity through innovative rewards and impactful initiatives.</span> <span className='text_a'>Join us on this exciting journey as we transform the world of cryptocurrency, one happy moment at a time.</span>
           </p>
         </div>
 
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-9 my-5 p-5 xl:p-0'>
-          <div className='bg-[#008082] p-5 rounded-3xl col-span-1 block md:flex lg:block justify-between items-center gap-5 card_a'>
+          <div className='from-[#FF3E02] to-[#F96A03] bg-gradient-to-r p-5 rounded-3xl col-span-1 block md:flex lg:block justify-between items-center gap-5 card_a'>
             <div className='w-auto md:w-[50%] lg:w-auto'>
               <img src="/Rectangle_uno.png" alt="financial freedom" />
             </div>
@@ -89,7 +89,7 @@ export default function Mission() {
             </div>
           </div>
 
-          <div className='bg-[#008082] p-5 rounded-3xl col-span-1 block md:flex lg:block justify-between items-center gap-5 card_b'>
+          <div className='from-[#FF3E02] to-[#F96A03] bg-gradient-to-r p-5 rounded-3xl col-span-1 block md:flex lg:block justify-between items-center gap-5 card_b'>
             <div className='w-auto md:w-[50%] lg:w-auto'>
               <img src="/Rectangle _tres.png" alt="Tesla Reward" />
             </div>
@@ -103,7 +103,7 @@ export default function Mission() {
             </div>
           </div>
 
-          <div className='bg-[#008082] p-5 rounded-3xl col-span-1 block md:flex lg:block justify-between items-center gap-5 card_c'>
+          <div className='from-[#FF3E02] to-[#F96A03] bg-gradient-to-r p-5 rounded-3xl col-span-1 block md:flex lg:block justify-between items-center gap-5 card_c'>
             <div className='w-auto md:w-[50%] lg:w-auto'>
               <img src="/Rectangle _dos.png" alt="financial freedom" />
             </div>

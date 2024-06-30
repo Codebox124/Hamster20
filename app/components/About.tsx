@@ -8,9 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 export default function AboutUs() {
     useEffect(() => {
         const animateElement = (selector: string, animation: { from: any, to: any }) => {
-            gsap.fromTo(selector, 
-                { ...animation.from }, 
-                { ...animation.to, 
+            gsap.fromTo(selector,
+                { ...animation.from },
+                {
+                    ...animation.to,
                     scrollTrigger: {
                         trigger: selector,
                         start: 'top 80%',
@@ -38,13 +39,19 @@ export default function AboutUs() {
     }, []);
 
     return (
-        <div className='pt-[120px] md:px-20 px-2'>
+        <div className='relative pt-[120px] md:px-20 px-2'>
+
+
             <div className='justify-center flex'>
-                <button className='bg-green px-6 rounded-xl py-2 text-white about_a'>About</button>
+
+                <button className='bg-gradient-to-r from-[#FF3E02] to-[#F9A503] px-6 rounded-xl py-2 text-white about_a'>About</button>
+
             </div>
             <div className=' rounded-xl px-4 mt-10  md:mt-16 happy_a'>
+
+
                 <div className='grid items-center  lg:grid-cols-2 gap-6 md:gap-10'>
-                    <div>
+                    <div className='text-yellow'>
                         <div>
                             <h1 className='md:text-2xl xl:text-5xl font-extrabold'>HAPPYHAMSTER20?</h1>
                         </div>
@@ -56,7 +63,7 @@ export default function AboutUs() {
                             </span>
                         </div>
                         <div className='mt-6'>
-                            <button className='px-6 md:px-9 py-4 text-white rounded-xl text-sm bg-green '>Get the Whitepaper</button>
+                            <button className='px-6 md:px-9 py-4 text-white rounded-xl text-sm bg-gradient-to-r from-[#FF3E02] to-[#F9A503]'>Get the Whitepaper</button>
                         </div>
                     </div>
                     <div className='flex justify-center lg:justify-end'>
@@ -65,7 +72,10 @@ export default function AboutUs() {
                 </div>
             </div>
 
-            <div className=' rounded-xl p-6 md:p-10 text-brown md:mt-[242px] mt-16 video_a'>
+            <div className=' rounded-xl p-6 md:p-10 text-yellow md:mt-[242px] mt-16 video_a'>
+                <div className='absolute inset-0 flex justify-center items-center'>
+                    <div className='w-[600px] h-[600px] bg-gradient-radial from-[#FF3E02] via-[#F9A503] to-transparent rounded-full opacity-50'></div>
+                </div>
                 <div className='text-center'>
                     <h1 className='text-3xl md:text-4xl font-bold mb-2'>WATCH THE VIDEO BELOW</h1>
                     <span className='text-lg md:text-sm font-montserrat font-light'>Check out this video to understand more about HappyHamster20</span>

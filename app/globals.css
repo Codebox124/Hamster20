@@ -8,6 +8,18 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+
+  --background-start-rgb: 225, 225, 184;
+  --background-end-rgb: 52, 28, 0;
+}
+
+body {
+  font-family: 'Monument', sans-serif;
+
+  background:#341C00 ;
+}
+
 @font-face {
   font-family: 'MonumentBold';
   src: url('/fonts/MonumentExtended-Ultrabold.otf') format('opentype');
@@ -21,9 +33,7 @@
   font-style: normal;
 }
 
-body {
-  font-family: 'Monument', sans-serif;
-}
+
 
 .scroll-container {
   width: 100%;

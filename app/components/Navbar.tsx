@@ -36,12 +36,12 @@ export default function Navbar() {
         <div className='relative z-50 flex justify-between items-center md:p-4 para'>
             <div className='flex gap-2 items-center'>
                 <img className='w-14 h-14' src='/hamster image 4.png' alt="Hamster" />
-                <div className='flex flex-col p-0 m-0 text-brown'>
+                <div className='flex flex-col p-0 m-0 text-yellow'>
                     <span className='text-2xl font-extrabold'>HAPPY</span>
                     <span className='-mt-3'>HAMSTER20</span>
                 </div>
             </div>
-            <div className='hidden md:flex justify-center gap-4 text-xs text-brown'>
+            <div className='hidden md:flex justify-center gap-4 text-xs text-yellow'>
                 <a href="#" onClick={closeMenu}>ABOUT US</a>
                 <a href="#" onClick={closeMenu}>MISSION</a>
                 <a href="#" onClick={closeMenu}>ROADMAP</a>
