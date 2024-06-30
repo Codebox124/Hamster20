@@ -1,13 +1,37 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
-import { motion, easeInOut } from 'framer-motion'
-
-import { fadeIn } from "../../varients"
-import { once } from "events"
+import { motion } from 'framer-motion';
+import { fadeIn } from "../../varients";
 
 export default function Hero() {
+    const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
+    useEffect(() => {
+        const targetDate = new Date('2024-12-31T23:59:59'); // Set your target date here
+
+        const interval = setInterval(() => {
+            const now = new Date();
+            const difference = targetDate - now;
+
+            const timeLeft = {
+                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                minutes: Math.floor((difference / 1000 / 60) % 60),
+                seconds: Math.floor((difference / 1000) % 60),
+            };
+
+            setTimeLeft(timeLeft);
+
+            if (difference < 0) {
+                clearInterval(interval);
+            }
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    const formatTime = (time) => String(time).padStart(2, '0');
 
     return (
         <div>
@@ -16,29 +40,29 @@ export default function Hero() {
                 <div className='grid lg:grid-cols-2 items-center flex-col md:flex-row mt-16'>
                     <div className='text-yellow flex-1'>
                         <div className='heroth'>
-                            <motion.span variants={fadeIn('down', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once:true, amount: 0.6 }} className='block text-center md:text-left hero_text'>GUESS WHO HAS BEEN WAITING FOR YOU?</motion.span>
-                            <motion.div variants={fadeIn('down', 0.8)} initial= 'hidden' whileInView={"show"} viewport={{once:true, amount:0.6}} className='flex flex-col p-0 m-0 font-extrabold text-center md:text-left'>
+                            <motion.span variants={fadeIn('down', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once: true, amount: 0.6 }} className='block text-center md:text-left hero_text'>
+                                GUESS WHO HAS BEEN WAITING FOR YOU?
+                            </motion.span>
+                            <motion.div variants={fadeIn('down', 0.8)} initial='hidden' whileInView={"show"} viewport={{ once: true, amount: 0.6 }} className='flex flex-col p-0 m-0 font-extrabold text-center md:text-left'>
                                 <span className='font-extrabold text-6xl md:text-9xl pl-0 md:pl-24 hero_text'>HAPPY</span>
                                 <span className='-mt-3 text-4xl md:text-7xl hero_text'>HAMSTER</span>
-
                             </motion.div>
                         </div>
 
-                        <motion.div variants={fadeIn('up', 0.5)} initial= '' whileInView={"show"} viewport={{once:true, amount: 0.6}}  className='z-40 -mt-8 md:-mt-16 img relative'>
+                        <motion.div variants={fadeIn('up', 0.5)} initial='' whileInView={"show"} viewport={{ once: true, amount: 0.6 }} className='z-40 -mt-8 md:-mt-16 img relative'>
                             <img className='h-auto w-full md:w-[860px]' src="/heroImg.png" alt="Hero Image" />
-
                         </motion.div>
                     </div>
-                    <motion.div variants={fadeIn('up', 0.2)} initial= 'hidden' whileInView={"show"} viewport={{once:true, amount: 0.6}} className='flex-1 mt-8 md:mt-0 md:ml-16'>
-                        <div className='rounded-lg md:p-8'>
+                    <motion.div variants={fadeIn('up', 0.2)} initial='hidden' whileInView={"show"} viewport={{ once: true, amount: 0.6 }} className='flex-1 mt-8 md:mt-0 md:ml-16'>
+                        <div className='relative rounded-lg md:p-8'>
                             <div className='absolute inset-0 bg-gradient-to-r rounded-full blur-xl from-transparent via-[#f9a7037b] to-transparent opacity-50 gradient-overlay '></div>
 
-                            <div className='text-center bg-yellow py-3 rounded-md border-2 border-brown text-brown mb-8 img'>
-                                <div className='text-4xl font-extrabold'>88:88:88:88</div>
+                            <div className='relative z-10 text-center bg-yellow py-3 rounded-md border-2 border-brown text-brown mb-8 img'>
+                                <div className='text-4xl font-extrabold'>{formatTime(timeLeft.days)}:{formatTime(timeLeft.hours)}:{formatTime(timeLeft.minutes)}:{formatTime(timeLeft.seconds)}</div>
                                 <div className='text-sm'>Days &nbsp; Hours &nbsp; Minutes &nbsp; Seconds</div>
                                 <div className='text-sm mt-2'>Presale starts in</div>
                             </div>
-                            <div className='bg-yellow border-brown border-2 text-brown p-6 rounded-lg mb-8 img'>
+                            <div className='relative z-10 bg-yellow border-brown border-2 text-brown p-6 rounded-lg mb-8 img'>
                                 <div className='border-2 border-brown p-3 rounded-lg'>
                                     <div className='text-center text-brown font-extrabold text-xl mb-4'>BUY $HPH</div>
                                     <div className='text-center text-brown text-sm mb-4'>1 $HPH = 0.000292USD</div>
