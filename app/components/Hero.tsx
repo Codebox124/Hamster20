@@ -42,7 +42,7 @@ export default function Hero() {
                                 GUESS WHO HAS BEEN WAITING FOR YOU?
                             </motion.span>
                             <motion.div variants={fadeIn('down', 0.8)} initial='hidden' whileInView={"show"} viewport={{ once: true, amount: 0.6 }} className='flex flex-col p-0 m-0 font-extrabold text-center lg:text-left'>
-                                <span className='font-extrabold text-4xl md:text-6xl lg:9xl pl-0 md:pl-24 hero_text'>HAPPY</span>
+                                <span className='font-extrabold text-4xl sm:text-6xl md:9xl pl-0 md:pl-24 hero_text'>HAPPY</span>
                                 <span className='-mt-3 text-4xl md:text-7xl hero_text'>HAMSTER</span>
                             </motion.div>
                         </div>
