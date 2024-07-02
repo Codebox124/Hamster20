@@ -14,7 +14,8 @@ export default function Hero() {
                 <div className='items-center  mt-16'>
                     <div className='text-yellow flex-1'>
                         <div className='heroth'>
-                            
+
+                       
                             <motion.div
                                 variants={fadeIn('up', 0.8)}
                                 initial='hidden'
@@ -28,7 +29,7 @@ export default function Hero() {
                                         show: { opacity: 1, y: 0 },
                                     }}
                                     transition={{ duration: 0.4, delay: 0.1 }}
-                                    className='font-extrabold text-lg sm:text-lg md:text-xl hero_text'
+                                    className='font-extrabold text-lg sm:text-lg md:text-2xl hero_text'
                                 >
                                     WELCOME TO
                                 </motion.span>
@@ -39,7 +40,7 @@ export default function Hero() {
                                         show: { opacity: 1, y: 0 },
                                     }}
                                     transition={{ duration: 0.4, delay: 0.3 }}
-                                    className='font-extrabold text-4xl sm:text-6xl md:text-6xl hero_text'
+                                    className='font-extrabold text-5xl sm:text-6xl   hero_text'
                                 >
                                     HAPPY
                                 </motion.span>

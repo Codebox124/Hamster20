@@ -16,8 +16,8 @@ const AboutUs = () => {
                 viewport={{ once: true, amount: 0.6 }} 
                 className='rounded-xl px-4 mt-10 md:mt-[150px] happy_a'
             >
-                <div className='grid items-center sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
-                    <div className='text-yellow'>
+                <div className='grid  sm:grid-cols-1 md:grid-cols-1 lg:flex justify-between  gap-6 md:gap-16'>
+                    <div className='md:w-[65%] text-yellow'>
                         <div>
                             <motion.h1 
                                 initial={{ opacity: 0, y: 40 }}
@@ -33,21 +33,21 @@ const AboutUs = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 1.5, delay: 0.4, ease: 'easeInOut' }}
-                                className='text-sm md:text-lg xl:text-xl flex flex-col font-montserrat gap-4 md:gap-7'
+                                className='text-sm md:text-lg xl:text-xl flex flex-col font-montserrat gap-4 md:gap-12'
                             >
                                 <span>In the wild world of the internet, a certain phenomenon has made waves: the sad hamster meme.</span>
                                 <span>HappyHamster was repeatedly confronted with this "gloomy" image. But instead of complaining, he decided to take matters into his own hands. Thus, the HappyHamster20 team was formed, full of energy and good vibes, ready to shake up the world with a dose of humor and a big splash of hope.</span>
                                 <span>Combining crypto know-how with a hefty dose of inspiration, they aim to show how to make the most of the digital age.</span>
                             </motion.span>
                         </div>
-                        <div className='mt-6'>
+                        <div className='mt-[50px] flex md:block justify-center'>
                             <motion.button
                                 variants={fadeIn('up', 0.4)}
                                 initial='hidden'
                                 animate='show'
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className='px-6 md:px-9 py-4 text-white rounded-xl text-sm bg-gradient-to-r from-[#FF3E02] to-[#F9A503]'
+                                className='px-6 md:px-9 md:py-6 py-4 text-white rounded-xl text-sm bg-gradient-to-r from-[#FF3E02] to-[#F9A503]'
                             >
                                 Get the Whitepaper
                             </motion.button>
@@ -104,10 +104,10 @@ const AboutUs = () => {
                     initial='hidden'
                     animate='show'
                     transition={{ duration: 1.5, delay: 1.6, ease: 'easeInOut' }}
-                    className='relative h-[200px] md:h-[500px] bg-yellow mt-3 md:mt-[72px] rounded-xl flex items-center justify-center'
+                    className='relative   bg-yellow mt-3 md:mt-[72px] rounded-xl flex items-center justify-center'
                 >
                     <video 
-                        className='w-full h-full md:w-[600px]  rounded-xl' 
+                        className='  h-full rounded-xl' 
                         controls 
                     >
                         <source src="/happyhamster.mp4" type="video/mp4" />
