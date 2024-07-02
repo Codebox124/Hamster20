@@ -38,8 +38,8 @@ export default function Roadmaps() {
   };
 
   return (
-    <div id="roadmap" className='text-yellow mx-auto my-10'>
-      <div className='max-w-[1370px] mx-auto pt-14 md:pt-20 lg:pt-36 pb-14'>
+    <div id="roadmap" className='text-yellow  md:pt-[235px] mx-auto my-10'>
+      <div className=' px-4 lg:px-20 mx-auto  lg:pt-36 pb-14'>
         <motion.div
           initial="hidden"
           animate="show"
@@ -68,10 +68,10 @@ export default function Roadmaps() {
         >
           <motion.div
             variants={fadeInUp}
-            className='py-5 md:py-8 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_a'
+            className='py-5 md:py-9 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_a'
           >
-            <div className='w-full md:w-[50%] xl:w-[40%] font-extralight text-left'>
-              <p className='font-montserrat font-extralight'>HappyHamster20 launches the presale. Early investors get a preferential price. The team uses part of the proceeds for a professional marketing strategy.</p>
+            <div className='w-full md:w-[50%] xl:w-[40%] font-thin text-left'>
+              <p className='font-montserrat font-thin'>HappyHamster20 launches the presale. Early investors get a preferential price. The team uses part of the proceeds for a professional marketing strategy.</p>
             </div>
             <div className='w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
               <p>PRESALE & MARKETING</p>
@@ -80,10 +80,10 @@ export default function Roadmaps() {
 
           <motion.div
             variants={fadeInUp}
-            className='py-5 md:py-8 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_b'
+            className='py-5 md:py-9 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_b'
           >
-            <div className='w-full md:w-[50%] xl:w-[40%] font-extralight text-left'>
-              <p className='font-montserrat font-extralight'>Investors have the opportunity to acquire tokens during the presale. After the successful launch, one of the presale investors will receive a Tesla Model S as a prize.</p>
+            <div className='w-full md:w-[50%] xl:w-[40%] font-thin text-left'>
+              <p className='font-montserrat font-thin'>Investors have the opportunity to acquire tokens during the presale. After the successful launch, one of the presale investors will receive a Tesla Model S as a prize.</p>
             </div>
             <div className='w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
               <p>INCENTIVE & INVESTMENT</p>
@@ -92,10 +92,10 @@ export default function Roadmaps() {
 
           <motion.div
             variants={fadeInUp}
-            className='py-5 md:py-8 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_c'
+            className='py-5 md:py-9 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_c'
           >
-            <div className='w-full md:w-[50%] xl:w-[40%] font-extralight text-left'>
-              <p className='font-montserrat font-extralight'>To ensure a fair start of HappyHamster20, presale investors can claim their tokens on the website simultaneously with the exchange listing.</p>
+            <div className='w-full md:w-[50%] xl:w-[40%] font-thin text-left'>
+              <p className='font-montserrat font-thin'>To ensure a fair start of HappyHamster20, presale investors can claim their tokens on the website simultaneously with the exchange listing.</p>
             </div>
             <div className='w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
               <p>TOKEN CLAIMING</p>
@@ -104,10 +104,10 @@ export default function Roadmaps() {
 
           <motion.div
             variants={fadeInUp}
-            className='py-5 md:py-8 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_d'
+            className='py-5 md:py-9 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_d'
           >
-            <div className='w-full md:w-[50%] xl:w-[40%] font-extralight text-left'>
-              <p className='font-montserrat font-extralight'>HappyHamster20 will be launched on PancakeSwap, one of the most popular decentralized exchanges. This provides the best trading environment and early liquidity.</p>
+            <div className='w-full md:w-[50%] xl:w-[40%] font-thin text-left'>
+              <p className='font-montserrat font-thin'>HappyHamster20 will be launched on PancakeSwap, one of the most popular decentralized exchanges. This provides the best trading environment and early liquidity.</p>
             </div>
             <div className='w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
               <p>DEX LAUNCH</p>
@@ -116,10 +116,10 @@ export default function Roadmaps() {
 
           <motion.div
             variants={fadeInUp}
-            className='py-5 md:py-8 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_e'
+            className='py-5 md:py-9 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_e'
           >
-            <div className='w-full md:w-[50%] xl:w-[40%] font-extralight text-left'>
-              <p className='font-montserrat font-extralight'>The HappyHamster20 team will provide a substantial liquidity pool on PancakeSwap. To this end, 10% of the total token supply has been set aside.</p>
+            <div className='w-full md:w-[50%] xl:w-[40%] font-thin text-left'>
+              <p className='font-montserrat font-thin'>The HappyHamster20 team will provide a substantial liquidity pool on PancakeSwap. To this end, 10% of the total token supply has been set aside.</p>
             </div>
             <div className='w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
               <p>PROVIDED LIQUIDITY</p>
@@ -128,10 +128,10 @@ export default function Roadmaps() {
 
           <motion.div
             variants={fadeInUp}
-            className='py-5 md:py-8 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_f'
+            className='py-5 md:py-9 flex flex-col-reverse md:flex-row text-lg justify-normal md:justify-between border-t-2 border-yellow text-yellow items-start md:items-center road_f'
           >
-            <div className='w-full md:w-[50%] xl:w-[40%] font-extralight text-left'>
-              <p className='font-montserrat font-extralight'>The HappyHamster20 team plans to distribute airdrops to the community irregularly in the future.</p>
+            <div className='w-full md:w-[50%] xl:w-[40%] font-thin text-left'>
+              <p className='font-montserrat font-thin'>The HappyHamster20 team plans to distribute airdrops to the community irregularly in the future.</p>
             </div>
             <div className='w-full md:w-[50%] xl:w-[30%] text-3xl lg:text-5xl text-left md:text-right'>
               <p>FUTURE PROSPECTS</p>

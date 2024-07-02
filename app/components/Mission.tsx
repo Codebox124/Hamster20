@@ -5,8 +5,8 @@ import { fadeIn } from "../../varients"; // Assuming you have defined fadeIn in 
 
 export default function Mission() {
     return (
-        <div id="mission" className='max-w-[1640px] md:mb-[179px] mb-10 mt-10 md:mt-[215px] mx-auto'>
-            <div className='max-w-[1370px] mx-auto'>
+        <div id="mission" className=' px-4 lg:px-10 mb-10 mt-10 md:mt-[215px] mx-auto'>
+            <div className=' px-4 lg:px-10 mx-auto'>
                 <div className='flex justify-center mb-6 md:mb-[60px] mission_a'>
                     <button className='bg-orange px-6 rounded-md py-2 text-white'>
                         Mission

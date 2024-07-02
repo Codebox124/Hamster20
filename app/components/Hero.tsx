@@ -11,7 +11,7 @@ export default function Hero() {
         <div>
             <div className='py-4 px-4 lg:px-10'>
                 <Navbar />
-                <div className='items-center   mt-16'>
+                <div className='items-center  mt-16'>
                     <div className='text-yellow flex-1'>
                         <div className='heroth'>
                             
@@ -20,10 +20,10 @@ export default function Hero() {
                                 initial='hidden'
                                 whileInView='show'
                                 viewport={{ once: true, amount: 0.6 }}
-                                className='flex flex-col p-0 m-0 font-extrabold text-center'
+                                className='flex flex-col p-0 md:gap-16 m-0 font-extrabold text-center'
                             >
-                                <span className='font-extrabold text-4xl sm:text-6xl md:text-5xl  hero_text'>HAPPY</span>
-                                <span className='-mt-3 text-4xl md:text-9xl hero_text'>HAMSTER</span>
+                                <span className='font-extrabold text-4xl sm:text-6xl md:text-[140px]  hero_text'>HAPPY</span>
+                                <span className=' text-4xl md:text-[200px] hero_text'>HAMSTER</span>
                             </motion.div>
                         </div>
 
@@ -38,7 +38,7 @@ export default function Hero() {
                    
                 </div>
             </div>
-            <div className='bg-yellow md:py-6 py-2 lg:-mt-4 z-50'>
+            <div className='bg-yellow md:py-6 py-2 -mt-4 z-50'>
                 <ScrollingText />
             </div>
         </div>
