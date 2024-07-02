@@ -17,7 +17,7 @@ const AboutUs = () => {
                 className='rounded-xl px-4 mt-10 md:mt-[150px] happy_a'
             >
                 <div className='grid  sm:grid-cols-1 md:flex  gap-6 md:gap-10'>
-                    <div className='w-[80%] text-yellow'>
+                    <div className='w-[70%] text-yellow'>
                         <div>
                             <motion.h1 
                                 initial={{ opacity: 0, y: 40 }}
