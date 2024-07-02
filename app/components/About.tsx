@@ -104,10 +104,10 @@ const AboutUs = () => {
                     initial='hidden'
                     animate='show'
                     transition={{ duration: 1.5, delay: 1.6, ease: 'easeInOut' }}
-                    className='relative h-[200px] md:h-[500px] bg-yellow mt-3 md:mt-[72px] rounded-xl flex items-center justify-center'
+                    className='relative   bg-yellow mt-3 md:mt-[72px] rounded-xl flex items-center justify-center'
                 >
                     <video 
-                        className='w-full h-full md:w-[600px]  rounded-xl' 
+                        className='  h-full rounded-xl' 
                         controls 
                     >
                         <source src="/happyhamster.mp4" type="video/mp4" />
