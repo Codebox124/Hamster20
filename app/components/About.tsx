@@ -1,7 +1,7 @@
-"use client"
+'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn } from "../../varients"; 
+import { fadeIn } from "../../varients";
 
 const AboutUs = () => {
     return (
@@ -104,9 +104,15 @@ const AboutUs = () => {
                     initial='hidden'
                     animate='show'
                     transition={{ duration: 1.5, delay: 1.6, ease: 'easeInOut' }}
-                    className='relative h-[200px] md:h-[500px] bg-yellow mt-3 rounded-xl'
+                    className='relative h-[200px] md:h-[500px] bg-yellow mt-3 rounded-xl flex items-center justify-center'
                 >
-                    {/* Video content goes here */}
+                    <video 
+                        className='w-full h-full md:w-[600px]  rounded-xl' 
+                        controls 
+                    >
+                        <source src="/happyhamster.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </motion.div>
             </motion.div>
         </div>
