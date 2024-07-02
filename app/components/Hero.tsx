@@ -22,7 +22,7 @@ export default function Hero() {
                                 initial='hidden'
                                 whileInView='show'
                                 viewport={{ once: true, amount: 0.6 }}
-                                className='flex flex-col md:gap-12 p-0 m-0 font-bold md:font-extrabold text-center'
+                                className='flex flex-col md:gap-10 p-0 m-0 font-bold md:font-extrabold text-center'
                             >
                                 <motion.span
                                     variants={{
@@ -30,7 +30,7 @@ export default function Hero() {
                                         show: { opacity: 1, y: 0 },
                                     }}
                                     transition={{ duration: 0.4, delay: 0.1 }}
-                                    className='font-extrabold text-lg sm:text-lg md:text-xl hero_text'
+                                    className='font-extrabold text-lg sm:text-lg md:text-[40px] hero_text'
                                 >
                                     WELCOME TO
                                 </motion.span>
