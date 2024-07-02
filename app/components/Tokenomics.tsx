@@ -48,7 +48,7 @@ export default function Tokenomics() {
   return (
     <>
       <section id="tokenomics" className='text-yellow px-4 lg:px-20 md:mt-[280px]  mx-auto'>
-        <div className=' mx-auto'>
+        <div className=' mx-auto w-[100] md:w-fit'>
           <div className='flex justify-center tok_but'>
             <motion.button
               initial={{ y: -20, opacity: 0, scale: 0.8 }}
@@ -70,27 +70,35 @@ export default function Tokenomics() {
           >
             <div className='lg:col-span-4 col-span-4 w-fit'>
               <motion.div
-                className='grid grid-rows-1 md:grid-cols-2 my-8 lg:my-16 gap-5 items-center md:items-start md:gap-14 w-fit'
+                className='grid grid-cols-2 my-8 lg:my-16 gap-5 items-center md:items-start md:gap-14 w-full max-w-[500px] md:max-w-none justify-between md:w-fit'
                 variants={containerVariant}
               >
+                <motion.div variants={itemVariants} className='col-span-1 tok_a'>
+
+                  <p className='font-normal text-xl md:font-extrabold '>Circulation</p>
+                  <p className='text-lg uppercase font-montserrat font-normal md:font-semibold'>200 Billion HPH</p>
+
+                </motion.div>
                 {[
-                  { text: 'Circulation', value: '200 Billion HPH', class: 'tok_a' },
                   { text: 'Airdrop Capital', value: '15%', class: 'tok_b' },
                   { text: 'Presale Reserve', value: '25%', class: 'tok_c' },
                   { text: 'Future Treasure', value: '30%', class: 'tok_d' },
                   { text: 'Marketing Reserve', value: '20%', class: 'tok_e' },
                   { text: 'Liquidity', value: '10%', class: 'tok_f' },
                 ].map((item, index) => (
-                  <motion.div key={index} className={`col-span-1 ${item.class}`} variants={itemVariants}>
-                    
-                    <p className='font-normal md:font-extrabold text-lg uppercase'>{item.text}</p>
-                    <p>{item.value}</p>
+                  <motion.div key={index} className={`col-span-1 ${item.class} flex gap-1 items-center`} variants={itemVariants}>
+                    <div className='p-5 md:p-7 rounded-md bg-gradient-to-r from-[#F96A03] to-[#F9A503]]'></div>
+
+                    <div>
+                      <p className='font-normal md:font-extrabold '>{item.value}</p>
+                      <p className=' md:text-base uppercase font-montserrat font-light text-xs'>{item.text}</p>
+                    </div>
                   </motion.div>
                 ))}
               </motion.div>
 
               <motion.div
-                className='bg-[#FFA500] flex justify-between items-center p-1 rounded-md w-[100%] tok_in'
+                className='bg-[#FFA500] md:flex justify-between items-center p-1 rounded-md w-[100%] tok_in hidden'
                 initial={{ y: 50, opacity: 0, scale: 0.8 }}
                 whileInView={{ y: 0, opacity: 1, scale: 1 }}
                 viewport={{ once: false }}
@@ -120,11 +128,45 @@ export default function Tokenomics() {
               <img className='h-auto w-full object-cover' src='/tokenomics.png' alt='Hero Image' />
             </motion.div>
           </motion.div>
+
+          <div className='w-full mt-12 block md:hidden relative'>
+            <motion.div
+              className='bg-[#FFA500] flex justify-between items-center p-1 rounded-md w-[100%] mx-auto tok_in absolute bottom-24 '
+              initial={{ y: 50, opacity: 0, scale: 0.8 }}
+              whileInView={{ y: 0, opacity: 1, scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.4, ease: 'easeInOut' }}
+            >
+              <div className='p-3 rounded-md bg-white text-[#666666]'>CA</div>
+              <div className='text-white uppercase overflow-hidden hidden md:block text-center w-full'>
+                xxxxxxxxxxxxxxxxxxxx...
+              </div>
+              <div className='text-white uppercase overflow-hidden w-full block md:hidden text-center'>
+                xxxxxxxxx...
+              </div>
+              <div className='p-3 rounded-md bg-white text-[#666666] cursor-pointer'>
+                <IoIosCopy size={25} />
+              </div>
+            </motion.div>
+
+            <motion.div
+              className='z-40 col-span-2 object-cover block md:hidden tok_img mx-auto'
+              initial={{ x: 100, opacity: 0, scale: 0.8 }}
+              whileInView={{ x: 0, opacity: 1, scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.4, ease: 'easeInOut' }}
+            >
+              <div className='absolute inset-0 bg-gradient-to-r rounded-full blur-xl from-transparent via-[#f9a7037b] to-transparent opacity-50 gradient-overlay '></div>
+              <img className='h-auto w-full object-cover' src='/tokenomics.png' alt='Hero Image' />
+            </motion.div>
+          </div>
         </div>
       </section>
+
       <div className='bg-yellow md:py-6 py-3 z-50'>
         <ScrollingText />
       </div>
+
       <section className='mx-auto py-10 md:py-28'>
         <div className='max-w-[1360px] mx-auto flex items-center justify-between relative'>
           <div className='md:flex flex-col justify-between h-full hidden'>
