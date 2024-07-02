@@ -81,7 +81,9 @@ export default function Tokenomics() {
                   { text: 'Marketing Reserve', value: '20%', class: 'tok_e' },
                   { text: 'Liquidity', value: '10%', class: 'tok_f' },
                 ].map((item, index) => (
-                  <motion.div key={index} className={`col-span-1 ${item.class}`} variants={itemVariants}>
+                  <motion.div key={index} className={`col-span-1 items-center gap-2  flex ${item.class}`} variants={itemVariants}>
+
+                    <div className='p-7 from-[#FF3E02] to-[#F9A503] border-yellow border-2 bg-gradient-to-r rounded-md'></div>
                     
                     <p className='font-normal md:font-extrabold text-lg uppercase'>{item.text}</p>
                     <p>{item.value}</p>

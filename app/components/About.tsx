@@ -16,8 +16,8 @@ const AboutUs = () => {
                 viewport={{ once: true, amount: 0.6 }} 
                 className='rounded-xl px-4 mt-10 md:mt-[150px] happy_a'
             >
-                <div className='grid items-center sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
-                    <div className='text-yellow'>
+                <div className='grid  sm:grid-cols-1 md:flex  gap-6 md:gap-10'>
+                    <div className='w-[80%] text-yellow'>
                         <div>
                             <motion.h1 
                                 initial={{ opacity: 0, y: 40 }}
@@ -33,7 +33,7 @@ const AboutUs = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 1.5, delay: 0.4, ease: 'easeInOut' }}
-                                className='text-sm md:text-lg xl:text-xl flex flex-col font-montserrat gap-4 md:gap-7'
+                                className='text-sm md:text-lg xl:text-xl flex flex-col font-montserrat gap-4 md:gap-12'
                             >
                                 <span>In the wild world of the internet, a certain phenomenon has made waves: the sad hamster meme.</span>
                                 <span>HappyHamster was repeatedly confronted with this "gloomy" image. But instead of complaining, he decided to take matters into his own hands. Thus, the HappyHamster20 team was formed, full of energy and good vibes, ready to shake up the world with a dose of humor and a big splash of hope.</span>
