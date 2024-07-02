@@ -16,8 +16,8 @@ const AboutUs = () => {
                 viewport={{ once: true, amount: 0.6 }} 
                 className='rounded-xl px-4 mt-10 md:mt-[150px] happy_a'
             >
-                <div className='grid  sm:grid-cols-1 md:grid-cols-1 lg:flex justify-between  gap-6 md:gap-16'>
-                    <div className='lg:w-[65%] text-yellow'>
+                <div className='grid  md:grid-cols-1   lg:grid-cols-2 justify-between  gap-6 md:gap-16'>
+                    <div className='grow mx-auto text-yellow'>
                         <div>
                             <motion.h1 
                                 initial={{ opacity: 0, y: 40 }}
@@ -40,14 +40,14 @@ const AboutUs = () => {
                                 <span>Combining crypto know-how with a hefty dose of inspiration, they aim to show how to make the most of the digital age.</span>
                             </motion.span>
                         </div>
-                        <div className='mt-[50px] flex md:block justify-center'>
+                        <div className='mt-[50px] flex lg:justify-start  md:justify-center'>
                             <motion.button
                                 variants={fadeIn('up', 0.4)}
                                 initial='hidden'
                                 animate='show'
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className='px-6 md:px-9 md:py-6 py-4 text-white rounded-xl text-sm bg-gradient-to-r from-[#FF3E02] to-[#F9A503]'
+                                className='px-6 md:px-9 md:py-6 py-4 flex  text-white rounded-xl text-sm bg-gradient-to-r from-[#FF3E02] to-[#F9A503]'
                             >
                                 Get the Whitepaper
                             </motion.button>
