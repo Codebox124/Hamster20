@@ -32,7 +32,7 @@ export default function Tokenomics() {
 
   return (
     <>
-      <section className='text-yellow max-w-[1640px] mx-auto'>
+      <section id="tokenomics" className='text-yellow max-w-[1640px] mx-auto'>
         <div className='max-w-[1370px] mx-auto'>
           <div className='flex justify-center tok_but'>
             <motion.button

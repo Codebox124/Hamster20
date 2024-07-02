@@ -5,7 +5,7 @@ import { fadeIn } from "../../varients";
 
 const AboutUs = () => {
     return (
-        <div className='relative pt-[120px] lg:px-20 px-2'>
+        <div id='about' className='relative pt-[120px] lg:px-20 px-2'>
             <div className='justify-center flex'>
                 <button className='bg-gradient-to-r from-[#FF3E02] to-[#F9A503] px-6 rounded-xl py-2 text-white about_a'>About</button>
             </div>

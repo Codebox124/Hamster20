@@ -38,7 +38,7 @@ export default function Roadmaps() {
   };
 
   return (
-    <div className='text-yellow mx-auto my-10'>
+    <div id="roadmap" className='text-yellow mx-auto my-10'>
       <div className='max-w-[1370px] mx-auto pt-14 md:pt-20 lg:pt-36 pb-14'>
         <motion.div
           initial="hidden"

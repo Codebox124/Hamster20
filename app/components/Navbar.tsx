@@ -1,8 +1,9 @@
-'use client'
+'use client';
 import React, { useState, useEffect } from 'react';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from 'react-scroll';
 import gsap from "gsap";
 
 export default function Navbar() {
@@ -42,10 +43,10 @@ export default function Navbar() {
                 </div>
             </div>
             <div className='hidden md:flex justify-center gap-4 text-xs text-yellow'>
-                <a href="#" onClick={closeMenu}>ABOUT US</a>
-                <a href="#" onClick={closeMenu}>MISSION</a>
-                <a href="#" onClick={closeMenu}>ROADMAP</a>
-                <a href="#" onClick={closeMenu}>TOKENOMICS</a>
+                <Link className='cursor-pointer' to="about" smooth={true} duration={500} onClick={closeMenu}>ABOUT US</Link>
+                <Link className='cursor-pointer' to="mission" smooth={true} duration={500} onClick={closeMenu}>MISSION</Link>
+                <Link className='cursor-pointer' to="roadmap" smooth={true} duration={500} onClick={closeMenu}>ROADMAP</Link>
+                <Link className='cursor-pointer' to="tokenomics" smooth={true} duration={500} onClick={closeMenu}>TOKENOMICS</Link>
             </div>
             <div className='hidden md:flex gap-4 items-center'>
                 <a href="">
@@ -69,10 +70,10 @@ export default function Navbar() {
                     <button onClick={closeMenu} className='self-end p-4'>
                         <FaTimes size={24} />
                     </button>
-                    <a href="#" className='py-2 text-brown text-sm' onClick={closeMenu}>ABOUT US</a>
-                    <a href="#" className='py-2 text-brown text-sm' onClick={closeMenu}>MISSION</a>
-                    <a href="#" className='py-2 text-brown text-sm' onClick={closeMenu}>ROADMAP</a>
-                    <a href="#" className='py-2 text-brown text-sm' onClick={closeMenu}>TOKENOMICS</a>
+                    <Link  to="about" smooth={true} duration={500} className='py-2 text-brown text-sm cursor-pointer' onClick={closeMenu}>ABOUT US</Link>
+                    <Link  to="mission" smooth={true} duration={500} className='py-2 text-brown text-sm cursor-pointer' onClick={closeMenu}>MISSION</Link>
+                    <Link  to="roadmap" smooth={true} duration={500} className='py-2 text-brown text-sm cursor-pointer' onClick={closeMenu}>ROADMAP</Link>
+                    <Link  to="tokenomics" smooth={true} duration={500} className='py-2 text-brown text-sm cursor-pointer' onClick={closeMenu}>TOKENOMICS</Link>
                     <div className='flex gap-4 items-center py-4'>
                         <a href="">
                             <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
