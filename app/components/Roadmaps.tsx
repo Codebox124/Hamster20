@@ -10,7 +10,8 @@ export default function Roadmaps() {
       y: 0,
       transition: {
         duration: 1.5,
-        ease: 'easeInOut'
+        ease: 'easeInOut',
+        staggerChildren: 0.01
       }
     }
   };
@@ -20,7 +21,7 @@ export default function Roadmaps() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3
+        staggerChildren: 0.08
       }
     }
   };
@@ -42,7 +43,8 @@ export default function Roadmaps() {
       <div className=' px-4 lg:px-20 mx-auto  lg:pt-36 pb-14'>
         <motion.div
           initial="hidden"
-          animate="show"
+          whileInView="show"
+          viewport={{ once: false }}
           variants={fadeInUp}
           className='flex justify-center road_but'
         >
@@ -51,7 +53,8 @@ export default function Roadmaps() {
 
         <motion.div
           initial="hidden"
-          animate="show"
+          whileInView="show"
+          viewport={{ once: false }}
           variants={staggerContainer}
           className='text-yellow text-center mb-6 md:mb-[119px] text-3xl md:text-7xl font-extrabold road_ham'
         >
@@ -62,7 +65,8 @@ export default function Roadmaps() {
 
         <motion.section
           initial="hidden"
-          animate="show"
+          whileInView="show"
+          viewport={{ once: false }}
           variants={staggerContainer}
           className='p-5 xl:p-0'
         >
