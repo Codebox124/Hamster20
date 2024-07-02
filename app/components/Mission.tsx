@@ -50,7 +50,7 @@ export default function Mission() {
                     </motion.p>
                 </motion.div>
 
-                {width >= 450 ? (
+                {width >= 768 ? (
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
