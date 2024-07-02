@@ -11,7 +11,7 @@ export default function Hero() {
         <div>
             <div className='py-4 px-4 lg:px-10'>
                 <Navbar />
-                <div className='items-center   mt-16'>
+                <div className='items-center  mt-16'>
                     <div className='text-yellow flex-1'>
                         <div className='heroth'>
                             
@@ -70,7 +70,7 @@ export default function Hero() {
                                     
                 </div>
             </div>
-            <div className='bg-yellow md:py-6 py-2 lg:-mt-4 z-50'>
+            <div className='bg-yellow md:py-6 py-2 -mt-4 z-50'>
                 <ScrollingText />
             </div>
         </div>

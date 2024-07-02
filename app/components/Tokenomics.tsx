@@ -47,8 +47,8 @@ export default function Tokenomics() {
 
   return (
     <>
-      <section id="tokenomics" className='text-yellow max-w-[1640px] mx-auto'>
-        <div className='max-w-[1370px] mx-auto'>
+      <section id="tokenomics" className='text-yellow px-4 lg:px-20 md:mt-[280px]  mx-auto'>
+        <div className=' mx-auto'>
           <div className='flex justify-center tok_but'>
             <motion.button
               initial={{ y: -20, opacity: 0, scale: 0.8 }}
@@ -82,6 +82,7 @@ export default function Tokenomics() {
                   { text: 'Liquidity', value: '10%', class: 'tok_f' },
                 ].map((item, index) => (
                   <motion.div key={index} className={`col-span-1 ${item.class}`} variants={itemVariants}>
+                    
                     <p className='font-normal md:font-extrabold text-lg uppercase'>{item.text}</p>
                     <p>{item.value}</p>
                   </motion.div>

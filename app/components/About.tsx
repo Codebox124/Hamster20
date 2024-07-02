@@ -5,7 +5,7 @@ import { fadeIn } from "../../varients";
 
 const AboutUs = () => {
     return (
-        <div id='about' className='relative pt-[120px] lg:px-20 px-2'>
+        <div id='about' className='relative pt-[125px] lg:px-20 px-2'>
             <div className='justify-center flex'>
                 <button className='bg-gradient-to-r from-[#FF3E02] to-[#F9A503] px-6 rounded-xl py-2 text-white about_a'>About</button>
             </div>
@@ -13,8 +13,8 @@ const AboutUs = () => {
                 variants={fadeIn('up', 0.4)} 
                 initial='hidden' 
                 whileInView="show" 
-                viewport={{ once: false, amount: 0.6 }} 
-                className='rounded-xl px-4 mt-10 md:mt-16 happy_a'
+                viewport={{ once: true, amount: 0.6 }} 
+                className='rounded-xl px-4 mt-10 md:mt-[150px] happy_a'
             >
                 <div className='grid items-center sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
                     <div className='text-yellow'>
@@ -71,7 +71,7 @@ const AboutUs = () => {
                 initial='hidden' 
                 whileInView="show" 
                 viewport={{ once: true, amount: 0.6 }} 
-                className='relative rounded-xl p-6 md:p-10 text-yellow mt-16 md:mt-24 video_a'
+                className='relative rounded-xl p-6 md:p-10 text-yellow mt-16 md:mt-[230px] video_a'
             >
                 <div className='absolute inset-0 flex justify-center items-center'>
                     <motion.div
@@ -104,7 +104,7 @@ const AboutUs = () => {
                     initial='hidden'
                     animate='show'
                     transition={{ duration: 1.5, delay: 1.6, ease: 'easeInOut' }}
-                    className='relative h-[200px] md:h-[500px] bg-yellow mt-3 rounded-xl flex items-center justify-center'
+                    className='relative h-[200px] md:h-[500px] bg-yellow mt-3 md:mt-[72px] rounded-xl flex items-center justify-center'
                 >
                     <video 
                         className='w-full h-full md:w-[600px]  rounded-xl' 
