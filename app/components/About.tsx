@@ -13,7 +13,7 @@ const AboutUs = () => {
                 variants={fadeIn('up', 0.4)} 
                 initial='hidden' 
                 whileInView="show" 
-                viewport={{ once: false, amount: 0.6 }} 
+                viewport={{ once: true, amount: 0.6 }} 
                 className='rounded-xl px-4 mt-10 md:mt-16 happy_a'
             >
                 <div className='grid items-center sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
