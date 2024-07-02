@@ -1,7 +1,7 @@
-'use client';
+"use client"
 import React from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn } from "../../varients";
+import { fadeIn } from "../../varients"; 
 
 const AboutUs = () => {
     return (
@@ -42,9 +42,11 @@ const AboutUs = () => {
                         </div>
                         <div className='mt-6'>
                             <motion.button
-                                initial={{ opacity: 0, y: 40 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1.5, delay: 0.6, ease: 'easeInOut' }}
+                                variants={fadeIn('up', 0.4)}
+                                initial='hidden'
+                                animate='show'
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
                                 className='px-6 md:px-9 py-4 text-white rounded-xl text-sm bg-gradient-to-r from-[#FF3E02] to-[#F9A503]'
                             >
                                 Get the Whitepaper
@@ -98,8 +100,9 @@ const AboutUs = () => {
                     </motion.span>
                 </div>
                 <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    variants={fadeIn('up', 0.4)}
+                    initial='hidden'
+                    animate='show'
                     transition={{ duration: 1.5, delay: 1.6, ease: 'easeInOut' }}
                     className='relative h-[200px] md:h-[500px] bg-yellow mt-3 rounded-xl'
                 >
