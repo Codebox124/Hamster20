@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../varients';
 
 export default function Hero() {
-
+   
 
     return (
         <div>
@@ -14,15 +14,24 @@ export default function Hero() {
                 <div className='items-center  mt-16'>
                     <div className='text-yellow flex-1'>
                         <div className='heroth'>
-
-
-
+{/* 
+                        <motion.div
+                                variants={fadeIn('down', 0.8)}
+                                initial='hidden'
+                                whileInView='show'
+                                viewport={{ once: true, amount: 0.6 }}
+                                className='flex flex-col p-0 md:gap-16 m-0 font-extrabold text-center'
+                            >
+                                <span className='font-extrabold text-4xl sm:text-6xl md:text-[140px]  hero_text'>HAPPY</span>
+                                <span className=' text-4xl md:text-[200px] hero_text'>HAMSTER</span>
+                            </motion.div> */}
+                            
                             <motion.div
                                 variants={fadeIn('up', 0.8)}
                                 initial='hidden'
                                 whileInView='show'
                                 viewport={{ once: true, amount: 0.6 }}
-                                className='flex flex-col md:gap-10 p-0 m-0 font-bold md:font-extrabold text-center'
+                                className='flex flex-col p-0 m-0 font-bold md:font-extrabold text-center'
                             >
                                 <motion.span
                                     variants={{
@@ -30,7 +39,7 @@ export default function Hero() {
                                         show: { opacity: 1, y: 0 },
                                     }}
                                     transition={{ duration: 0.4, delay: 0.1 }}
-                                    className='font-extrabold text-lg sm:text-lg md:text-[40px] hero_text'
+                                    className='font-extrabold text-lg sm:text-lg md:text-xl hero_text'
                                 >
                                     WELCOME TO
                                 </motion.span>
@@ -41,7 +50,7 @@ export default function Hero() {
                                         show: { opacity: 1, y: 0 },
                                     }}
                                     transition={{ duration: 0.4, delay: 0.3 }}
-                                    className='font-extrabold text-4xl sm:text-6xl md:text-[140px]   hero_text'
+                                    className='font-extrabold text-4xl sm:text-6xl   hero_text'
                                 >
                                     HAPPY
                                 </motion.span>
@@ -52,7 +61,7 @@ export default function Hero() {
                                         show: { opacity: 1, y: 0 },
                                     }}
                                     transition={{ duration: 0.4, delay: 0.5 }}
-                                    className=' text-4xl md:text-[200px] hero_text'
+                                    className='- text-4xl md:text-9xl hero_text'
                                 >
                                     HAMSTER
                                 </motion.span>
@@ -69,7 +78,7 @@ export default function Hero() {
                         </motion.div>
                     </div>
 
-
+                                    
                 </div>
             </div>
             <div className='bg-yellow md:py-6 py-2 -mt-4 z-50'>
