@@ -51,7 +51,7 @@ export default function Hero() {
                                         show: { opacity: 1, y: 0 },
                                     }}
                                     transition={{ duration: 0.4, delay: 0.5 }}
-                                    className='- text-6xl md:text-9xl hero_text'
+                                    className='- text-5xl md:text-9xl hero_text'
                                 >
                                     HAMSTER
                                 </motion.span>
