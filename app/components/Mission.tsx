@@ -5,25 +5,26 @@ import { fadeIn } from "../../varients"; // Assuming you have defined fadeIn in 
 
 export default function Mission() {
     const useWindowWidth = () => {
-        const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    
+        const [windowWidth, setWindowWidth] = useState(0);
+
         useEffect(() => {
             const handleResize = () => {
                 setWindowWidth(window.innerWidth);
             };
-    
+
+            handleResize(); // Set initial width
             window.addEventListener('resize', handleResize);
             return () => window.removeEventListener('resize', handleResize);
         }, []);
-    
+
         return windowWidth;
     };
 
     const width = useWindowWidth();
-    
+
     return (
-        <div id="mission" className=' px-4 lg:px-10 mb-10 mt-10 md:mt-[215px] mx-auto'>
-            <div className=' px-4 lg:px-10 mx-auto'>
+        <div id="mission" className='px-4 lg:px-10 mb-10 mt-10 md:mt-[215px] mx-auto'>
+            <div className='px-4 lg:px-10 mx-auto'>
                 <div className='flex justify-center mb-6 md:mb-[60px] mission_a'>
                     <button className='bg-orange px-6 rounded-md py-2 text-white'>
                         Mission
@@ -176,7 +177,6 @@ export default function Mission() {
                         </motion.div>
                     </motion.div>
                 ) : (
-                
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
