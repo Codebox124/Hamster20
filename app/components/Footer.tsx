@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className='uppercase flex justify-between md:justify-center gap-0 md:gap-10 items-center lg:hidden mt-5 text-sm flex-wrap'>
+          <div className='uppercase flex justify-between md:justify-center gap-0 md:gap-10 items-center lg:hidden mt-5 md:text-sm text-xs flex-wrap'>
             <div><a href="">about us</a></div>
             <div><a href="">mission</a></div>
             <div><a href="">roadmap</a></div>
