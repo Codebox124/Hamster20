@@ -47,8 +47,8 @@ export default function Tokenomics() {
 
   return (
     <>
-      <section id="tokenomics" className='text-yellow px-4 lg:px-20 md:mt-[280px]  mx-auto'>
-        <div className=' mx-auto w-[100] md:w-fit'>
+      <section id="tokenomics" className='text-yellow px-4 lg:px-20 mt-10 mx-auto'>
+        <div className=' mx-auto w-full md:w-fit'>
           <div className='flex justify-center tok_but'>
             <motion.button
               initial={{ y: -20, opacity: 0, scale: 0.8 }}
@@ -62,22 +62,20 @@ export default function Tokenomics() {
           </div>
 
           <motion.div
-            className='p-3 xl:p-0 grid lg:grid-cols-6 lg:col-span-7 items-center'
+            className='p-3 xl:p-0 grid lg:grid-cols-6 mt-[48px] lg:col-span-7 items-center'
             initial='hidden'
             whileInView='visible'
             viewport={{ once: false }}
             variants={containerVariants}
           >
-            <div className='lg:col-span-4 col-span-4 w-fit'>
+            <div className='lg:col-span-4 col-span-4 w-full'>
               <motion.div
-                className='grid grid-cols-2 my-8 lg:my-16 gap-5 items-center md:items-start md:gap-14 w-full max-w-[500px] md:max-w-none justify-between md:w-fit'
+                className='grid grid-cols-2 gap-5 items-center w-full justify-between md:gap-14'
                 variants={containerVariant}
               >
                 <motion.div variants={itemVariants} className='col-span-1 tok_a'>
-
                   <p className='font-normal text-xl md:font-extrabold '>Circulation</p>
                   <p className='text-lg uppercase font-montserrat font-normal md:font-semibold'>200 Billion HPH</p>
-
                 </motion.div>
                 {[
                   { text: 'Airdrop Capital', value: '15%', class: 'tok_b' },
@@ -86,28 +84,25 @@ export default function Tokenomics() {
                   { text: 'Marketing Reserve', value: '20%', class: 'tok_e' },
                   { text: 'Liquidity', value: '10%', class: 'tok_f' },
                 ].map((item, index) => (
-                  <motion.div key={index} className={`col-span-1 items-center gap-2   flex ${item.class}`} variants={itemVariants}>
-
+                  <motion.div key={index} className={`col-span-1 items-center gap-2 flex ${item.class}`} variants={itemVariants}>
                     <div className='p-7 from-[#FF3E02] to-[#F9A503] border-yellow border-2 bg-gradient-to-r rounded-md'></div>
-
                     <div>
                       <p className='font-normal md:font-extrabold text-lg uppercase'>{item.value}</p>
                       <p className='font-montserrat font-thin' >{item.text}</p>
-
                     </div>
                   </motion.div>
                 ))}
               </motion.div>
 
               <motion.div
-                className='bg-[#FFA500] md:flex justify-between items-center p-1 rounded-md w-[100%] tok_in hidden'
+                className='bg-[#FFA500] mt-[160px]   justify-between items-center p-1 rounded-md w-[660px] tok_in hidden lg:flex'
                 initial={{ y: 50, opacity: 0, scale: 0.8 }}
                 whileInView={{ y: 0, opacity: 1, scale: 1 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.4, ease: 'easeInOut' }}
               >
                 <div className='p-3 rounded-md bg-white text-[#666666]'>CA</div>
-                <div className='text-white uppercase overflow-hidden hidden md:block'>
+                <div className='text-white uppercase overflow-hidden hidden lg:block'>
                   xxxxxxxxxxxxxxxxxxxx...
                 </div>
                 <div className='text-white uppercase overflow-hidden w-full block md:hidden'>
@@ -131,9 +126,9 @@ export default function Tokenomics() {
             </motion.div>
           </motion.div>
 
-          <div className='w-full mt-12 block md:hidden relative'>
+          <div className='w-full mt-12 block lg:hidden relative'>
             <motion.div
-              className='bg-[#FFA500] flex justify-between items-center p-1 rounded-md w-[100%] mx-auto tok_in absolute bottom-24 '
+              className='bg-[#FFA500] z-50 flex lg:hidden justify-between items-center p-1 rounded-md w-full tok_in absolute bottom-24 '
               initial={{ y: 50, opacity: 0, scale: 0.8 }}
               whileInView={{ y: 0, opacity: 1, scale: 1 }}
               viewport={{ once: false }}
@@ -170,7 +165,7 @@ export default function Tokenomics() {
       </div>
 
       <section className='mx-auto py-10 md:py-28'>
-        <div className='max-w-[1360px] mx-auto flex items-center justify-between relative'>
+        <div className=' mx-auto flex items-center justify-between relative'>
           <div className='md:flex flex-col justify-between h-full hidden'>
             <motion.div
               className='mb-auto absolute -top-[90px] xlg:-top-[70px] left-[10px] xlg:left-[70px] xl:left-11 aimg'
@@ -231,14 +226,13 @@ export default function Tokenomics() {
     </>
   );
 }
-
 function ScrollingText() {
   return (
     <div className='scrolling-text-container'>
       <div className='scrolling-text flex gap-3 items-center'>
-        <span className='text-brown text-4xl md:text-7xl'>PRESALE STARTS SOON </span>
+        <span className='text-brown text-4xl md:text-7xl'>PRESALE STARTS SOON</span>
         <img className='w-14 h-14' src='/hamster image 4.png' alt='Hamster' />
-        <span className='text-brown text-4xl md:text-7xl'>PRESALE STARTS SOON </span>
+        <span className='text-brown text-4xl md:text-7xl'>PRESALE STARTS SOON</span>
       </div>
     </div>
   );

@@ -5,9 +5,9 @@ import { FaXTwitter } from 'react-icons/fa6'
 
 export default function Footer() {
   return (
-    <div className=' text-white mx-auto'>
-      <div className='bg-[#532D00]'>
-        <div className=' max-w-[1400px] mx-auto py-10 px-3 xl:px-0'>
+    <div className=' text-white '>
+      <div className='bg-[#532D00]  md:px-20  px-4'>
+        <div className='  mx-auto py-10 px-3 xl:px-0'>
           <div className='flex justify-between item-center'>
             <div className='flex gap-1 items-center'>
               <div className='border border-white rounded-lg'>
@@ -27,12 +27,12 @@ export default function Footer() {
               <div><a href="">tokenomics</a></div>
             </div>
 
-            <div className='flex gap-5 items-center'>
-              <div className='p-3 rounded-lg bg-white text-[#532D00]'>
+            <div className='flex gap-5 items-center text-white'>
+              <div className="p-3 rounded-lg bg-gradient-to-r bg-orange " >
                 <a href=""><FaXTwitter size={22}/></a>
               </div>
 
-              <div className='p-3 rounded-lg bg-white text-[#532D00]'>
+              <div className="p-3 rounded-lg bg-gradient-to-r bg-orange ">
                 <a href=""><FaTelegramPlane size={22}/></a>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
 
           <div className='pt-8 text-center'>
-            <p className=' font-light text-lg leading-5 md:leading-9 font-montserrat'>The information on the HappyHamster20 website is for informational purposes only and does not constitute financial investments, or legal advice. Cryptocurrency  investments involve a high degree of risk, including the potential loss of your entire investment. Always conduct your own research and consult witha a qualified financial advisor before making any investment decisions.</p>
+            <p className=' font-light lg:text-lg text-xs leading-snug md:leading-9 font-montserrat'>The information on the HappyHamster20 website is for informational purposes only and does not constitute financial investments, or legal advice. Cryptocurrency  investments involve a high degree of risk, including the potential loss of your entire investment. Always conduct your own research and consult witha a qualified financial advisor before making any investment decisions.</p>
           </div>
         </div>
       </div>

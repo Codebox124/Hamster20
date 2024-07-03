@@ -40,7 +40,7 @@ export default function Hero() {
                                         show: { opacity: 1, y: 0 },
                                     }}
                                     transition={{ duration: 0.4, delay: 0.3 }}
-                                    className='font-extrabold text-4xl sm:text-6xl   hero_text'
+                                    className='font-extrabold text-5xl sm:text-6xl   hero_text'
                                 >
                                     HAPPY
                                 </motion.span>
@@ -51,7 +51,7 @@ export default function Hero() {
                                         show: { opacity: 1, y: 0 },
                                     }}
                                     transition={{ duration: 0.4, delay: 0.5 }}
-                                    className='- text-5xl md:text-9xl hero_text'
+                                    className='- text-4xl md:text-9xl hero_text'
                                 >
                                     HAMSTER
                                 </motion.span>
