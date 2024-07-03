@@ -5,7 +5,7 @@ import { fadeIn } from "../../varients";
 
 const AboutUs = () => {
     return (
-        <div id='about' className='relative pt-[125px] lg:px-20 px-2'>
+        <div id='about' className='relative mt-[50px] md:pt-[125px] lg:px-20 px-2'>
             <div className='justify-center flex'>
                 <button className='bg-gradient-to-r from-[#FF3E02] to-[#F9A503] px-6 rounded-xl py-2 text-white about_a'>About</button>
             </div>
@@ -14,7 +14,7 @@ const AboutUs = () => {
                 initial='hidden' 
                 whileInView="show" 
                 viewport={{ once: true, amount: 0.6 }} 
-                className='rounded-xl px-4 mt-10 md:mt-[150px] happy_a'
+                className='rounded-xl px-4 mt-[50px] md:mt-[150px] happy_a'
             >
                 <div className='grid  md:grid-cols-1   lg:grid-cols-2 justify-between  gap-6 md:gap-16'>
                     <div className='grow mx-auto text-yellow'>
@@ -40,7 +40,7 @@ const AboutUs = () => {
                                 <span>Combining crypto know-how with a hefty dose of inspiration, they aim to show how to make the most of the digital age.</span>
                             </motion.span>
                         </div>
-                        <div className='mt-[50px] flex lg:justify-start  md:justify-center'>
+                        <div className='mt-[50px] flex lg:justify-start items-center   justify-center'>
                             <motion.button
                                 variants={fadeIn('up', 0.4)}
                                 initial='hidden'
@@ -53,7 +53,7 @@ const AboutUs = () => {
                             </motion.button>
                         </div>
                     </div>
-                    <div className='flex justify-center lg:justify-end'>
+                    <div className='flex mt-[50px] lg:mt-0 justify-center lg:justify-end'>
                         <motion.img
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
@@ -86,7 +86,7 @@ const AboutUs = () => {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.5, delay: 1.2, ease: 'easeInOut' }}
-                        className='text-3xl md:text-4xl font-bold mb-2'
+                        className='text-[13px] md:text-4xl font-bold mb-2'
                     >
                         WATCH THE VIDEO BELOW
                     </motion.h1>
@@ -94,7 +94,7 @@ const AboutUs = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1.5, delay: 1.4, ease: 'easeInOut' }}
-                        className='text-lg md:text-sm font-montserrat font-light'
+                        className='text-sm md:text-sm font-montserrat font-light'
                     >
                         Check out this video to understand more about HappyHamster20
                     </motion.span>
