@@ -62,7 +62,7 @@ export default function Tokenomics() {
           </div>
 
           <motion.div
-            className='p-3 xl:p-0 grid grid-cols-6 lg:col-span-7 items-center'
+            className='p-3 xl:p-0 grid lg:grid-cols-6 lg:col-span-7 items-center'
             initial='hidden'
             whileInView='visible'
             viewport={{ once: false }}
