@@ -58,7 +58,7 @@ const AboutUs = () => {
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1.5, delay: 0.8, ease: 'easeInOut' }}
-                            className='h-auto w-full md:w-[400px] border-4 rounded-3xl border-yellow'
+                            className='h-auto w-full md:w-[400px]  rounded-3xl'
                             src="/Frame 1 (1).png"
                             alt="Hamster"
                         />
