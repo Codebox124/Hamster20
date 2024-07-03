@@ -236,9 +236,9 @@ function ScrollingText() {
   return (
     <div className='scrolling-text-container'>
       <div className='scrolling-text flex gap-3 items-center'>
-        <span className='text-brown text-4xl md:text-7xl'>HAPPY HAMSTER</span>
+        <span className='text-brown text-4xl md:text-7xl'>PRESALE STARTS SOON </span>
         <img className='w-14 h-14' src='/hamster image 4.png' alt='Hamster' />
-        <span className='text-brown text-4xl md:text-7xl'>HAPPY HAMSTER</span>
+        <span className='text-brown text-4xl md:text-7xl'>PRESALE STARTS SOON </span>
       </div>
     </div>
   );
