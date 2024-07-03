@@ -14,7 +14,7 @@ const AboutUs = () => {
                 initial='hidden' 
                 whileInView="show" 
                 viewport={{ once: true, amount: 0.6 }} 
-                className='rounded-xl px-4 mt-[50px] md:mt-[150px] happy_a'
+                className='rounded-xl px-4 md:px-20 mt-[50px] md:mt-[150px] happy_a'
             >
                 <div className='grid  md:grid-cols-1   lg:grid-cols-2 justify-between  gap-6 md:gap-16'>
                     <div className='grow mx-auto text-yellow'>
