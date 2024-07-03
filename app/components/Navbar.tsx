@@ -39,7 +39,7 @@ export default function Navbar() {
                 <img className='w-14 h-14' src='/hamster image 4.png' alt="Hamster" />
                 <div className='flex flex-col p-0 m-0 text-yellow'>
                     <span className='text-2xl font-extrabold'>HAPPY</span>
-                    <span className='-mt-3'>HAMSTER20</span>
+                    <span className='-mt-2'>HAMSTER20</span>
                 </div>
             </div>
             <div className='hidden md:flex justify-center gap-4 text-xs text-yellow'>
@@ -62,7 +62,7 @@ export default function Navbar() {
             </div>
             <div className='md:hidden flex items-center para'>
                 <button onClick={toggleMenu}>
-                    {isOpen ? <FaTimes size={24} /> : <FaBars color='white' size={24} />}
+                    {isOpen ? <FaTimes size={24} /> : <div className='p-1 rounded-md border border-yellow bg-orange'><FaBars color='white' size={24} /></div>}
                 </button>
             </div>
             {isOpen && (
