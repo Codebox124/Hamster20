@@ -29,11 +29,11 @@ export default function Footer() {
 
             <div className='flex gap-5 items-center text-white'>
               <div className="p-3 rounded-lg bg-gradient-to-r bg-orange " >
-                <a href=""><FaXTwitter size={22}/></a>
+                <a href="https://x.com/HHamster20?s=09"><FaXTwitter size={22}/></a>
               </div>
 
               <div className="p-3 rounded-lg bg-gradient-to-r bg-orange ">
-                <a href=""><FaTelegramPlane size={22}/></a>
+                <a href="https://t.me/happyhamster20"><FaTelegramPlane size={22}/></a>
               </div>
             </div>
           </div>

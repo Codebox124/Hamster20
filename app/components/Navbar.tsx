@@ -49,12 +49,12 @@ export default function Navbar() {
                 <Link className='cursor-pointer' to="tokenomics" smooth={true} duration={500} onClick={closeMenu}>TOKENOMICS</Link>
             </div>
             <div className='hidden md:flex gap-4 items-center'>
-                <a href="">
+                <a href="https://x.com/HHamster20?s=09">
                     <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
                         <FaXTwitter color='white' size={24} />
                     </div>
                 </a>
-                <a href="">
+                <a href="https://t.me/happyhamster20">
                     <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
                         <FaTelegramPlane color='white' size={24} />
                     </div>
@@ -75,12 +75,12 @@ export default function Navbar() {
                     <Link  to="roadmap" smooth={true} duration={500} className='py-2 text-brown text-sm cursor-pointer' onClick={closeMenu}>ROADMAP</Link>
                     <Link  to="tokenomics" smooth={true} duration={500} className='py-2 text-brown text-sm cursor-pointer' onClick={closeMenu}>TOKENOMICS</Link>
                     <div className='flex gap-4 items-center py-4'>
-                        <a href="">
+                        <a href="https://x.com/HHamster20?s=09">
                             <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
                                 <FaXTwitter color='white' size={24} />
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://t.me/happyhamster20">
                             <div className='flex items-center justify-center h-12 w-12 bg-orange rounded-xl'>
                                 <FaTelegramPlane color='white' size={24} />
                             </div>
